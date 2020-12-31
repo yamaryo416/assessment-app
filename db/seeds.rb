@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Therapist.create!(unique_id: "10101010",
+                  first_name: "example",
+                  last_name: "example",
+                  password: "password",
+                  password_confirmation: "password"
+)
+admin = Therapist.first
+admin.add_role :admin
