@@ -15,5 +15,7 @@ Rails.application.routes.draw do
     resources :therapists, only: [:index, :show, :destroy]
   end
 
-  resources :patients
+  resources :patients do
+    resources :rom_scales
+  end
 end
