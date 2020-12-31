@@ -2,8 +2,7 @@ class Therapist < ApplicationRecord
   rolify
   include Scope
 
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :trackable and :omniauthable
+  has_many :patients, dependent: :destroy
   devise :database_authenticatable, :registerable,
          :validatable, :timeoutable
   validates :unique_id, presence: true, length: { is: 8 }, uniqueness: true
