@@ -38,7 +38,7 @@ class DeviseCreateTherapists < ActiveRecord::Migration[6.1]
       t.timestamps null: false
     end
 
-    add_index :therapists, :unique_id,                unique: true
+    add_index :therapists, :unique_id,             unique: true
     # add_index :therapists, :reset_password_token, unique: true
     # add_index :therapists, :confirmation_token,   unique: true
     # add_index :therapists, :unlock_token,         unique: true

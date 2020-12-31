@@ -1,9 +1,9 @@
 class Therapist < ApplicationRecord
   rolify
   # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  # :confirmable, :lockable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :validatable
+         :validatable, :timeoutable
   validates :unique_id, presence: true, length: { is: 8 }, uniqueness: true
   validates :first_name, presence: true, length: { maximum: 10 }
   validates :last_name, presence: true, length: { maximum: 10 }
