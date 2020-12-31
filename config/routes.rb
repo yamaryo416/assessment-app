@@ -11,5 +11,9 @@ Rails.application.routes.draw do
     delete "/logout", to: "therapists/sessions#destroy"
   end
 
+  namespace :admin do
+    resources :therapists, only: [:index, :show, :destroy]
+  end
+
   resources :patients
 end
