@@ -24,6 +24,8 @@ RSpec.feature "Therapists", type: :feature do
     click_button "ログイン"
     expect(page).to have_current_path patients_path
     expect(page).to have_link "鈴木 太郎"
+    expect(page).to have_link "患者一覧"
+    expect(page).to have_link "患者登録", count: 2
     expect(page).to have_link "ユーザー作成"
     expect(page).to have_link "ユーザー一覧"
     expect(page).not_to have_link "パスワードを変更する"
@@ -38,6 +40,8 @@ RSpec.feature "Therapists", type: :feature do
     click_button "ログイン"
     expect(page).to have_current_path patients_path
     expect(page).to have_link "佐藤 花"
+    expect(page).to have_link "患者一覧"
+    expect(page).to have_link "患者登録", count: 2
     expect(page).not_to have_link "ユーザー作成"
     expect(page).not_to have_link "ユーザー一覧"
     expect(page).to have_link "パスワードを変更する"
