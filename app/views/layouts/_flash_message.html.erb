@@ -1,0 +1,5 @@
+<div class="container flash-message-content">
+  <%= flash_message(flash[:success], :success) if flash[:success] %>
+  <%= flash_message(flash[:alert], :danger) if flash[:alert] %>
+  <%= flash_message(flash[:notice], :success) if flash[:notice] %>
+</div>

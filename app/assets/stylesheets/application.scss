@@ -46,3 +46,57 @@ header {
     font-size: 10px;
   }
 }
+
+// main
+.main-contents{
+  padding-top: 12px;
+  padding-bottom: 80px;
+}
+.flash-message-content{
+  margin-top: 102px;
+}
+
+//footer
+footer{
+  border-top: 3px dotted rgba(30, 120, 190, 0.5);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.5)
+}
+@media screen and (max-width: 768px) {
+  footer{
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h5{
+    font-size: 15px;
+  }
+}
+
+// therapist
+.new-therapist, .edit-therapist{
+  text-align: center;
+}
+
+//form-part
+.new-section, .edit-section{
+  h3{
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+}
+.form_group + .form_group{
+  margin-top: 30px;
+}
+.form-action{
+  margin-top:10px;
+}
+
+//btn
+.btn-primary{
+  background-color: rgb(30, 120, 190);
+  border-color: rgb(30, 120, 190);
+}
