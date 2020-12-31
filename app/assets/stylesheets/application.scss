@@ -201,6 +201,22 @@ footer{
   }
 }
 
+//rom
+.new-rom-collapse, .show-rom-collapse, .new-mmt-collapse, .show-mmt-collapse{
+  margin-bottom: 20px;
+  button{
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .new-rom-collapse, .show-rom-collapse{
+    button{
+      margin: 10px;
+    }
+  }
+}
+
 //form-part
 .new-section, .edit-section{
   h3{
