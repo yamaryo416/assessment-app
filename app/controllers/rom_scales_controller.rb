@@ -1,0 +1,2 @@
+class RomScalesController < ApplicationController
+end
