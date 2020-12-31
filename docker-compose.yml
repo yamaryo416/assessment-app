@@ -9,7 +9,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ".:/hyouka-app"
+      - ".:/assessment-app"
     environment:
       - "DATABASE_PASSWORD=postgres"
     tty: true

@@ -21,6 +21,6 @@ RUN sh -c 'wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | 
   && chown root:root ~/chromedriver \
   && chmod 755 ~/chromedriver \
   && mv ~/chromedriver /usr/local/bin/chromedriver
-WORKDIR /hyouka-app
-COPY Gemfile Gemfile.lock /hyouka-app/
+WORKDIR /assessment-app
+COPY Gemfile Gemfile.lock /assessment-app/
 RUN bundle install
