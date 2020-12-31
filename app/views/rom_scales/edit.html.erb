@@ -1,0 +1,12 @@
+<% provide(:title, "ROM編集") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "ROM" %>
+<div class="main-contents patient-page edit-sias edit-section">
+  <div class="container">
+    <%= form_scale_link_section("ROM", "rom_scales", @patient) %>
+    <%= form_with(url: patient_rom_scale_path(id: @rom_scale), scope: :rom_scale, local: true, method: :patch) do |f| %>
+      <%= render "rom_scales/form_parts/collaps_btns", { f: f, rom_scale: @rom_scale } %>
+      <%= f.submit %>
+      <%= render "form", f: f, rom_scale: @rom_scale %>
+    <% end %>
+  </div>
+</div>

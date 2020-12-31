@@ -1,0 +1,20 @@
+<% provide(:title, "ROM") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "ROM" %>
+<div class="main-contents patient-page show-rom">
+  <div class="container">
+    <%= show_scale_link_section("ROM", "rom_scales", @patient, @rom_scale) %>
+    <div class="rom-overview overview">
+      <h3>可動域制限</h3>
+      <p class="limit-part-detail">
+        <% if @rom_scale.limit_part.empty? %>
+          なし
+        <% else %>
+          <% @rom_scale.limit_part.each do |part| %>
+            <%= RomScale.human_attribute_name(part[0]) %>
+          <% end %>
+        <% end %>
+      </p>
+    </div>
+    <%= render "score", rom_scale: @rom_scale %>
+  </div>
+</div>
