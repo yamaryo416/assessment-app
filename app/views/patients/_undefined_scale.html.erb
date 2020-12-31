@@ -1,5 +1,10 @@
 <div class="undefined-scale-section show-patient-content">
   <h3>評価項目</h3>
   <div class="undefined-scale-items row">
+    <% if patient.rom_scales.blank? %>
+      <div class="undefined-scale-item col-sm-4">
+        <%= link_to "ROM", new_patient_rom_scale_path(patient), class: "undefined-scale btn btn-secondary", local: true %>
+      </div>
+    <% end %>
   </div>
 </div>

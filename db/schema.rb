@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_31_094555) do
+ActiveRecord::Schema.define(version: 2020_12_31_114549) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,79 @@ ActiveRecord::Schema.define(version: 2020_12_31_094555) do
     t.index ["resource_type", "resource_id"], name: "index_roles_on_resource"
   end
 
+  create_table "rom_scales", force: :cascade do |t|
+    t.integer "right_shoulder_flexion"
+    t.integer "left_shoulder_flexion"
+    t.integer "right_shoulder_extension"
+    t.integer "left_shoulder_extension"
+    t.integer "right_shoulder_adduction"
+    t.integer "left_shoulder_adduction"
+    t.integer "right_shoulder_abduction"
+    t.integer "left_shoulder_abduction"
+    t.integer "right_first_shoulder_internal_rotation"
+    t.integer "left_first_shoulder_internal_rotation"
+    t.integer "right_first_shoulder_external_rotation"
+    t.integer "left_first_shoulder_external_rotation"
+    t.integer "right_second_shoulder_internal_rotation"
+    t.integer "left_second_shoulder_internal_rotation"
+    t.integer "right_second_shoulder_external_rotation"
+    t.integer "left_second_shoulder_external_rotation"
+    t.integer "right_third_shoulder_internal_rotation"
+    t.integer "left_third_shoulder_internal_rotation"
+    t.integer "right_third_shoulder_external_rotation"
+    t.integer "left_third_shoulder_external_rotation"
+    t.integer "right_elbow_flexion"
+    t.integer "left_elbow_flexion"
+    t.integer "right_elbow_extension"
+    t.integer "left_elbow_extension"
+    t.integer "right_forearm_pronation"
+    t.integer "left_forearm_pronation"
+    t.integer "right_forearm_supination"
+    t.integer "left_forearm_supination"
+    t.integer "right_wrist_flexion"
+    t.integer "left_wrist_flexion"
+    t.integer "right_wrist_extension"
+    t.integer "left_wrist_extension"
+    t.integer "right_wrist_adduction"
+    t.integer "left_wrist_adduction"
+    t.integer "right_wrist_abduction"
+    t.integer "left_wrist_abduction"
+    t.integer "right_hip_flexion"
+    t.integer "left_hip_flexion"
+    t.integer "right_hip_extension"
+    t.integer "left_hip_extension"
+    t.integer "right_hip_adduction"
+    t.integer "left_hip_adduction"
+    t.integer "right_hip_abduction"
+    t.integer "left_hip_abduction"
+    t.integer "right_hip_internal_rotation"
+    t.integer "left_hip_internal_rotation"
+    t.integer "right_hip_external_rotation"
+    t.integer "left_hip_external_rotation"
+    t.integer "right_knee_flexion"
+    t.integer "left_knee_flexion"
+    t.integer "right_knee_extension"
+    t.integer "left_knee_extension"
+    t.integer "right_first_ankle_flexion"
+    t.integer "left_first_ankle_flexion"
+    t.integer "right_second_ankle_flexion"
+    t.integer "left_second_ankle_flexion"
+    t.integer "right_ankle_extension"
+    t.integer "left_ankle_extension"
+    t.integer "right_ankle_adduction"
+    t.integer "left_ankle_adduction"
+    t.integer "right_ankle_abduction"
+    t.integer "left_ankle_abduction"
+    t.integer "right_ankle_pronation"
+    t.integer "left_ankle_pronation"
+    t.integer "right_ankle_supination"
+    t.integer "left_ankle_supination"
+    t.bigint "patient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_rom_scales_on_patient_id"
+  end
+
   create_table "therapists", force: :cascade do |t|
     t.string "unique_id", default: "", null: false
     t.string "first_name", default: "", null: false
@@ -57,4 +130,5 @@ ActiveRecord::Schema.define(version: 2020_12_31_094555) do
   end
 
   add_foreign_key "patients", "therapists"
+  add_foreign_key "rom_scales", "patients"
 end
