@@ -11,6 +11,9 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <% if current_therapist.has_role?(:admin) %>
                 <li><%= link_to "ユーザー作成", signup_path, class: "dropdown-item" %></li>
+                <li><%= link_to "ユーザー一覧", admin_therapists_path, class: "dropdown-item" %></li>
+              <% else %>
+                <li><%= link_to "パスワードを変更する", edit_therapist_registration_path, class: "dropdown-item" %></li>
               <% end %>
               <li><%= link_to "ログアウト", logout_path, class: "dropdown-item", method: :delete %></li>
             </ul>
