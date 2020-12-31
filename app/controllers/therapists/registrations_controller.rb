@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 class Therapists::RegistrationsController < Devise::RegistrationsController
-  # before_action :configure_sign_up_params, only: [:create]
+  prepend_before_action :require_no_authentication, only: [:cancel]
+  before_action :creatable?, only: [:new, :create]
+  before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
@@ -49,6 +51,18 @@ class Therapists::RegistrationsController < Devise::RegistrationsController
   # def configure_account_update_params
   #   devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
   # end
+
+  def sign_up(resource_name, resource)
+    if !current_therapist_is_admin?
+      sign_in(resource_name, resource)
+    end
+  end
+
+  def creatable?
+    if !current_therapist_is_admin?
+      redirect_to root_path
+    end
+  end
 
   # The path used after sign up.
   # def after_sign_up_path_for(resource)
