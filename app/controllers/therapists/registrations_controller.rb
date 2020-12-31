@@ -52,6 +52,10 @@ class Therapists::RegistrationsController < Devise::RegistrationsController
   #   devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
   # end
 
+  def after_sign_up_path_for(resource)
+    admin_therapists_path
+  end
+
   def sign_up(resource_name, resource)
     if !current_therapist_is_admin?
       sign_in(resource_name, resource)
