@@ -57,7 +57,12 @@ class PatientsController < ApplicationController
   end
 
   def edit_patient_params
-    params.require(:patient).permit(:sex, :age, :weight, :height)
+    params.require(:patient).permit(:first_name,
+                                    :last_name,
+                                    :sex,
+                                    :age,
+                                    :weight,
+                                    :height)
   end
 
   def correct_therapist?

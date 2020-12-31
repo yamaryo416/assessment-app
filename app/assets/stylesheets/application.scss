@@ -1,5 +1,12 @@
 @import 'reset';
 
+//body
+body{
+  a{
+    color: black;
+    text-decoration: none;
+  }
+}
 // header
 header {
   .navbar{
@@ -43,7 +50,9 @@ header {
     font-size: 10px;
   }
   .dropdown-menu{
-    font-size: 10px;
+    li{
+      font-size: 10px;
+    }
   }
 }
 
@@ -79,6 +88,119 @@ footer{
   text-align: center;
 }
 
+//patient
+.new-patient-link{
+  margin-bottom: 20px;
+}
+.new-patient, .edit-patient{
+  text-align: center;
+  select{
+    height: 30px;
+  }
+  .form_group{
+    display: flex;
+    justify-content: center;
+    span{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .fist-name-form, .last-name-form{
+    width: 100px;
+  }
+  .age-form, .weight-form, .height-form{
+    width: 70px;
+  }
+
+}
+.patient-page{
+  margin-top: 30px;
+  h3{
+    font-size: 20px;
+  }
+  .show-patient-content{
+    padding:10px 20px;
+    margin-top: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(30, 120, 190);
+    background-color: white;
+  }
+}
+.patient-details{
+  align-items: center;
+  margin-bottom: 40px;
+  .name-content{
+    line-height: 60px;
+    vertical-align: middle;
+    padding-right: 30px;
+  }
+  .sex-and-age-content, .height-and-weight-content{
+    p{
+      margin-bottom:5px;
+    }
+  }
+  .sex-and-age-content{
+    padding-right: 30px;
+  }
+}
+.evaluation-finding-section{
+  margin-top: 15px;
+}
+.defined-scale-section{
+  .defined-scale-item{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: flex-end;
+    border-bottom: 1px solid gray;
+    .define-scale-content{
+      padding-left: 0px;
+    }
+    .defined-scale{
+      display: inline-block;
+      width: 160px;
+      font-size: 15px;
+    }
+  }
+}
+.undefined-scale-section{
+  margin-top: 15px;
+}
+.undefined-scale-items{
+  padding-top: 20px;
+}
+.undefined-scale-item{
+  text-align: center;
+  margin-top: 15px;
+  .undefined-scale{
+    display: inline-block;
+    width: 160px;
+  }
+}
+.delete-link-section{
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .patient-details{
+    .sex-and-age-content{
+      padding-left: 15px;
+    }
+    .edit-link{
+      width: 100px;
+    }
+  }
+  .define-scale-content{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .total-score, .score-part, .undefined-columns-count{
+    text-align: center;
+  }
+}
+
 //form-part
 .new-section, .edit-section{
   h3{
@@ -107,4 +229,43 @@ footer{
 }
 .new-therapist-btn{
   margin-bottom: 20px;
+}
+.btn-secondary{
+  background-color: rgb(211, 211, 211);
+  border-color: rgb(211, 211, 211);
+  color: black;
+}
+.custom-btn{
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  padding: 5px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn-radius-solid {
+  border: 1px solid #ccc;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+}
+a.btn-radius-solid:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
 }
