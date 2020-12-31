@@ -96,7 +96,15 @@ footer{
 }
 
 //btn
-.btn-primary{
-  background-color: rgb(30, 120, 190);
-  border-color: rgb(30, 120, 190);
+.form-action, .new-theapist-link{
+  .btn-primary{
+    background-color: rgb(30, 120, 190);
+    border-color: rgb(30, 120, 190);
+  }
+}
+.signup-btn, .login-btn, .new-patient-btn, .edit-patient-btn{
+  margin-top: 20px;
+}
+.new-therapist-btn{
+  margin-bottom: 20px;
 }
