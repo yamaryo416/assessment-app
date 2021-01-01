@@ -1,0 +1,2 @@
+class MmtScalesController < ApplicationController
+end
