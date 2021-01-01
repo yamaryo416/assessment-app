@@ -25,5 +25,6 @@ Rails.application.routes.draw do
     resources :bathyesthesia_scales
     resources :brs_scales
     resources :sias_scales
+    resources :fact_scales
   end
 end
