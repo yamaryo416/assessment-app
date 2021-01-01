@@ -1,5 +1,8 @@
 FactoryBot.define do
   factory :brs_scale do
-    patient { nil }
+    upper_limb { nil }
+    finger { nil }
+    lower_limb { nil }
+    association :patient
   end
 end
