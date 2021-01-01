@@ -1,0 +1,2 @@
+class TactileScalesController < ApplicationController
+end
