@@ -8,6 +8,7 @@ class Patient < ApplicationRecord
   has_many :mas_scales, dependent: :destroy
   has_many :tendon_reflex_scales, dependent: :destroy
   has_many :tactile_scales, dependent: :destroy
+  has_many :bathyesthesia_scales, dependent: :destroy
 
   validates :first_name, presence: true, length: { maximum: 10 }
   validates :last_name, presence: true, length: { maximum: 10 }
