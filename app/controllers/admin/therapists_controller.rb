@@ -1,5 +1,7 @@
 class Admin::TherapistsController < ApplicationController
   before_action :authenticate?
+  skip_before_action :correct_therapist?
+  skip_before_action :set_patient
 
   def index
     @therapists = Therapist.recent.page(params[:page]).per(10)
