@@ -27,5 +27,6 @@ Rails.application.routes.draw do
     resources :sias_scales
     resources :fact_scales
     resources :fbs_scales
+    resources :bestest_scales
   end
 end
