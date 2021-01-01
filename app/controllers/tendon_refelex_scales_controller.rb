@@ -1,0 +1,2 @@
+class TendonRefelexScalesController < ApplicationController
+end
