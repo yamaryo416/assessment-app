@@ -1,0 +1,2 @@
+class HdsrScalesController < ApplicationController
+end
