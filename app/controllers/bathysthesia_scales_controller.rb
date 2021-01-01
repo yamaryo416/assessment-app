@@ -1,0 +1,2 @@
+class BathysthesiaScalesController < ApplicationController
+end
