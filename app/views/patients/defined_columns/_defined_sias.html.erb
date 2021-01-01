@@ -1,0 +1,11 @@
+<% if patient.sias_scales.present? %>
+  <div class="defined-sias-scale defined-scale-item row">
+    <div class="col-sm-4 define-scale-content">
+      <%= link_to "SIAS", patient_sias_scales_path(patient), class: "defined-scale btn btn-primary", local: true %>
+    </div>
+    <p class="sias-total-score total-score col-sm-3">合計　<%= patient.sias_scales.last.decorate.total_score %>点</p>
+    <% if patient.sias_scales.last.decorate.undefined_count > 0 %>
+      <p class="sias-undefined-columns-count undefined-columns-count col-sm-3">*<%= patient.sias_scales.last.decorate.undefined_count %>項目が未入力です。</p>
+    <% end %>
+  </div>
+<% end %>
