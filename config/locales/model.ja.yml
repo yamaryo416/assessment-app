@@ -141,6 +141,10 @@ ja:
         left_ankle_pronation: 左内返し
         right_ankle_supination: 右外返し
         left_ankle_supination: 左外返し
+      nrs_scale:
+        rating: NRS
+        status: 状態
+        supplement: 補足
   enums:
     patient:
       sex:
@@ -638,3 +642,9 @@ ja:
         fair: 3
         good: 4
         normal: 5
+    nrs_scale:
+      status:
+        undefined: 未選択
+        resting: 安静時
+        moving: 体動時
+        loading: 荷重時
