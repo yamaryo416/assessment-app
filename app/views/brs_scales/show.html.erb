@@ -1,0 +1,9 @@
+<% provide(:title, "BRS") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "BRS" %>
+<div class="main-contents patient-page show-brs">
+  <div class="container">
+    <%= show_scale_link_section("BRS", "brs_scales", @patient, @brs_scale) %>
+    <%= render "show_brs_scale_table", brs_scale: @brs_scale %>
+    <%= render "brs_scales/modal/explain_modal" %>
+  </div>
+</div>
