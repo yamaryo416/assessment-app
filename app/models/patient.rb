@@ -12,6 +12,7 @@ class Patient < ApplicationRecord
   has_many :brs_scales, dependent: :destroy
   has_many :sias_scales, dependent: :destroy
   has_many :fact_scales, dependent: :destroy
+  has_many :fbs_scales, dependent: :destroy
 
   validates :first_name, presence: true, length: { maximum: 10 }
   validates :last_name, presence: true, length: { maximum: 10 }
