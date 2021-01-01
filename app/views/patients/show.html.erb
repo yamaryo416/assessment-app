@@ -4,11 +4,6 @@
   <div class="container">
     <%= render "patients/patient_detail", patient: @patient %>
     <%= render "patients/patient_overview", patient: @patient %>
-    <div class="evaluation-finding-section show-patient-content">
-        <h3>評価初見</h3>
-        <div class="evaluation-finding-items">
-        </div>
-    </div>
     <%= render "patients/defined_scale", patient: @patient %>
     <%= render "patients/undefined_scale", patient: @patient %>
     <div class="delete-link-section d-flex flex-row-reverse">
