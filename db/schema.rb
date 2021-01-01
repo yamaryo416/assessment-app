@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_01_124412) do
+ActiveRecord::Schema.define(version: 2021_01_01_130630) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,27 @@ ActiveRecord::Schema.define(version: 2021_01_01_124412) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["patient_id"], name: "index_fact_scales_on_patient_id"
+  end
+
+  create_table "fbs_scales", force: :cascade do |t|
+    t.integer "stand_up"
+    t.integer "standing"
+    t.integer "sitting"
+    t.integer "sit_down"
+    t.integer "transfer"
+    t.integer "standing_with_eyes_close"
+    t.integer "standing_with_leg_close"
+    t.integer "reach_forward"
+    t.integer "pickup_from_floor"
+    t.integer "turn_around"
+    t.integer "one_rotation"
+    t.integer "stepup_and_down"
+    t.integer "tandem_standing"
+    t.integer "standing_with_one_leg"
+    t.bigint "patient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_fbs_scales_on_patient_id"
   end
 
   create_table "mas_scales", force: :cascade do |t|
@@ -339,6 +360,7 @@ ActiveRecord::Schema.define(version: 2021_01_01_124412) do
   add_foreign_key "bathyesthesia_scales", "patients"
   add_foreign_key "brs_scales", "patients"
   add_foreign_key "fact_scales", "patients"
+  add_foreign_key "fbs_scales", "patients"
   add_foreign_key "mas_scales", "patients"
   add_foreign_key "mmt_scales", "patients"
   add_foreign_key "nrs_scales", "patients"
