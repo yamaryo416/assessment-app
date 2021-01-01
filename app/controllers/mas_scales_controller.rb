@@ -1,0 +1,2 @@
+class MasScalesController < ApplicationController
+end
