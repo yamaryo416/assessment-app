@@ -1,0 +1,2 @@
+class BestestScalesController < ApplicationController
+end
