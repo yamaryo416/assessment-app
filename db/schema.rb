@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_01_081810) do
+ActiveRecord::Schema.define(version: 2021_01_01_090643) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "mas_scales", force: :cascade do |t|
+    t.integer "right_elbow_joint"
+    t.integer "left_elbow_joint"
+    t.integer "right_wrist_joint"
+    t.integer "left_wrist_joint"
+    t.integer "right_knee_joint"
+    t.integer "left_knee_joint"
+    t.integer "right_ankle_joint"
+    t.integer "left_ankle_joint"
+    t.bigint "patient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_mas_scales_on_patient_id"
+  end
 
   create_table "mmt_scales", force: :cascade do |t|
     t.integer "neck_flexion"
@@ -206,6 +221,7 @@ ActiveRecord::Schema.define(version: 2021_01_01_081810) do
     t.index ["therapist_id"], name: "index_therapists_roles_on_therapist_id"
   end
 
+  add_foreign_key "mas_scales", "patients"
   add_foreign_key "mmt_scales", "patients"
   add_foreign_key "nrs_scales", "patients"
   add_foreign_key "patients", "therapists"
