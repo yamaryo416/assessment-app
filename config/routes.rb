@@ -18,5 +18,6 @@ Rails.application.routes.draw do
   resources :patients do
     resources :rom_scales
     resources :mmt_scales
+    resources :nrs_scales
   end
 end
