@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_01_134709) do
+ActiveRecord::Schema.define(version: 2021_01_01_141544) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -97,6 +97,31 @@ ActiveRecord::Schema.define(version: 2021_01_01_134709) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["patient_id"], name: "index_fbs_scales_on_patient_id"
+  end
+
+  create_table "hdsr_scales", force: :cascade do |t|
+    t.integer "age"
+    t.integer "year"
+    t.integer "month"
+    t.integer "day"
+    t.integer "day_of_the_week"
+    t.integer "place"
+    t.integer "first_three_word"
+    t.integer "second_three_word"
+    t.integer "third_three_word"
+    t.integer "first_subtraction"
+    t.integer "second_subtraction"
+    t.integer "revese_three_number"
+    t.integer "revese_four_number"
+    t.integer "memory_first_word"
+    t.integer "memory_second_word"
+    t.integer "memory_third_word"
+    t.integer "five_goods"
+    t.integer "vegetables"
+    t.bigint "patient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_hdsr_scales_on_patient_id"
   end
 
   create_table "mas_scales", force: :cascade do |t|
@@ -383,6 +408,7 @@ ActiveRecord::Schema.define(version: 2021_01_01_134709) do
   add_foreign_key "brs_scales", "patients"
   add_foreign_key "fact_scales", "patients"
   add_foreign_key "fbs_scales", "patients"
+  add_foreign_key "hdsr_scales", "patients"
   add_foreign_key "mas_scales", "patients"
   add_foreign_key "mmt_scales", "patients"
   add_foreign_key "nrs_scales", "patients"
