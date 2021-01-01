@@ -21,5 +21,6 @@ Rails.application.routes.draw do
     resources :nrs_scales
     resources :mas_scales
     resources :tendon_reflex_scales
+    resources :tactile_scales
   end
 end
