@@ -1,0 +1,21 @@
+<% provide(:title, "MMT") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "MMT" %>
+<div class="main-contents patient-page show-mmt">
+  <div class="container">
+    <%= show_scale_link_section("MMT", "mmt_scales", @patient, @mmt_scale) %>
+    <div class="mmt-overview overview">
+      <h3>筋力低下</h3>
+      <p class="weak-part-detail">
+        <% if @mmt_scale.weak_part.empty? %>
+          なし
+        <% else %>
+          <% @mmt_scale.weak_part.each do |part| %>
+            <%= MmtScale.human_attribute_name(part[0]) %>
+          <% end %>
+        <% end %>
+      </p>
+    </div>
+    <%= render "mmt_scales/score_parts/collaps_btns", mmt_scale: @mmt_scale %>
+    <%= render "score", mmt_scale: @mmt_scale %>
+  </div>
+</div>
