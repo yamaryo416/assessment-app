@@ -8,7 +8,7 @@
         筋緊張亢進:なし
       <% else %>
         <%= link_to "筋緊張亢進: #{patient.mas_scales.last.decorate.hypertonia_part.size}箇所", "#", class:"mas-hypertonia-part-count", data: {toggle: "modal", target: "#mas-hypertonia-part" } %>
-        <%= render "modal/mas_hypertonia_modal", patient: patient %>
+        <%= render "patients/modal/mas_hypertonia_modal", patient: patient %>
       <% end %>
     </p>
   </div>
