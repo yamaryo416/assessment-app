@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_01_090643) do
+ActiveRecord::Schema.define(version: 2021_01_01_093522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -203,6 +203,29 @@ ActiveRecord::Schema.define(version: 2021_01_01_090643) do
     t.index ["patient_id"], name: "index_rom_scales_on_patient_id"
   end
 
+  create_table "tendon_reflex_scales", force: :cascade do |t|
+    t.integer "jaw"
+    t.integer "abdominal"
+    t.integer "right_pectoral"
+    t.integer "left_pectoral"
+    t.integer "right_biceps"
+    t.integer "left_biceps"
+    t.integer "right_triceps"
+    t.integer "left_triceps"
+    t.integer "right_brachioradialis"
+    t.integer "left_brachioradialis"
+    t.integer "right_pronator"
+    t.integer "left_pronator"
+    t.integer "right_patellar_tendon"
+    t.integer "left_patellar_tendon"
+    t.integer "right_achilles_tendon"
+    t.integer "left_achilles_tendon"
+    t.bigint "patient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_tendon_reflex_scales_on_patient_id"
+  end
+
   create_table "therapists", force: :cascade do |t|
     t.string "unique_id", default: "", null: false
     t.string "first_name", default: "", null: false
@@ -226,4 +249,5 @@ ActiveRecord::Schema.define(version: 2021_01_01_090643) do
   add_foreign_key "nrs_scales", "patients"
   add_foreign_key "patients", "therapists"
   add_foreign_key "rom_scales", "patients"
+  add_foreign_key "tendon_reflex_scales", "patients"
 end
