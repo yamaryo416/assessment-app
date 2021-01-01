@@ -1,0 +1,2 @@
+class BrsScalesController < ApplicationController
+end
