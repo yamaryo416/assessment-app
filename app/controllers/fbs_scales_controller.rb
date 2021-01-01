@@ -1,0 +1,2 @@
+class FbsScalesController < ApplicationController
+end
