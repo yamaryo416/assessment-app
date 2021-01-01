@@ -1,13 +1,17 @@
-class MasScaleDecorator < ApplicationDecorator
+# frozen_string_literal: true
+
+class MasScaleDecorator < ScaleDecorator
   delegate_all
 
-  # Define presentation-specific methods here. Helpers are accessed through
-  # `helpers` (aka `h`). You can override attributes, for example:
-  #
-  #   def created_at
-  #     helpers.content_tag :span, class: 'time' do
-  #       object.created_at.strftime("%a %m/%d/%y")
-  #     end
-  #   end
-
+  def hypertonia_part
+    hypertonia_part = []
+    scale_score.each do |scale|
+      next if scale[1].nil?
+      value = send("#{scale[0]}_before_type_cast")
+      if value >= 2
+        hypertonia_part << scale
+      end
+    end
+    hypertonia_part
+  end
 end
