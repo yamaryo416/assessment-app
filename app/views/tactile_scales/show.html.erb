@@ -1,0 +1,20 @@
+<% provide(:title, "触覚検査") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "触覚検査" %>
+<div class="main-contents patient-page show-tactile">
+  <div class="container">
+    <%= show_scale_link_section("触覚検査", "tactile_scales", @patient, @tactile_scale) %>
+    <div class="tactile-overview overview">
+      <h3>感覚機能低下</h3>
+      <p class="limita-part-detail">
+        <% if @tactile_scale.limit_part.empty? %>
+          なし
+        <% else %>
+          <% @tactile_scale.limit_part.each do |part| %>
+            <%= TactileScale.human_attribute_name(part[0]) %>
+          <% end %>
+        <% end %>
+      </p>
+    </div>
+    <%= render "score", tactile_scale: @tactile_scale %>
+  </div>
+</div>
