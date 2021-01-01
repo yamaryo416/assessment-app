@@ -51,5 +51,10 @@
         <%= link_to "FACT", new_patient_fact_scale_path(patient), class: "undefined-scale btn btn-secondary", local: true %>
       </div>
     <% end %>
+    <% if patient.fbs_scales.blank? %>
+      <div class="undefined-scale-item col-sm-4">
+        <%= link_to "FBS", new_patient_fbs_scale_path(patient), class: "undefined-scale btn btn-secondary", local: true %>
+      </div>
+    <% end %>
   </div>
 </div>
