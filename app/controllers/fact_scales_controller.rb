@@ -1,0 +1,2 @@
+class FactScalesController < ApplicationController
+end
