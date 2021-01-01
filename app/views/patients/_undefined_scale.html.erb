@@ -16,5 +16,10 @@
         <%= link_to "NRS", new_patient_nrs_scale_path(patient), class: "undefined-scale btn btn-secondary", local: true %>
       </div>
     <% end %>
+    <% if patient.mas_scales.blank? %>
+      <div class="undefined-scale-item col-sm-4">
+        <%= link_to "MAS", new_patient_mas_scale_path(patient), class: "undefined-scale btn btn-secondary", local: true %>
+      </div>
+    <% end %>
   </div>
 </div>

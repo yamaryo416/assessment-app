@@ -1,0 +1,15 @@
+<% if patient.mas_scales.present? %>
+  <div class="defined-scale-item row">
+    <div class="col-sm-4 define-scale-content">
+      <%= link_to "MAS", patient_mas_scales_path(patient), class: "defined-scale btn btn-primary", local: true %>
+    </div>
+    <p class="mas-hypertonia score-part col-sm-3">
+      <% if patient.mas_scales.last.decorate.hypertonia_part.empty? %>
+        筋緊張亢進:なし
+      <% else %>
+        <%= link_to "筋緊張亢進: #{patient.mas_scales.last.decorate.hypertonia_part.size}箇所", "#", class:"mas-hypertonia-part-count", data: {toggle: "modal", target: "#mas-hypertonia-part" } %>
+        <%= render "modal/mas_hypertonia_modal", patient: patient %>
+      <% end %>
+    </p>
+  </div>
+<% end %>
