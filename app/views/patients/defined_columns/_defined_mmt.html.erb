@@ -1,0 +1,15 @@
+<% if patient.mmt_scales.present? %>
+  <div class="defined-scale-item row">
+    <div class="col-sm-4 define-scale-content">
+      <%= link_to "MMT", patient_mmt_scales_path(patient), class: "defined-scale btn btn-primary", local: true %>
+    </div>
+    <p class="mmt-weak score-part col-sm-4">
+      <% if patient.mmt_scales.last.decorate.weak_part.empty? %>
+        筋力低下: なし
+      <% else %>
+        <%= link_to "筋力低下: #{patient.mmt_scales.last.decorate.weak_part.size}箇所", "#", class: "mmt-weak-part-count", data: {toggle: "modal", target: "#mmt-weak-part" } %>
+        <%= render "modal/mmt_weak_modal", patient: patient %>
+      <% end %>
+    </p>
+  </div>
+<% end %>

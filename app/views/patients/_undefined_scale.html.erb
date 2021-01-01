@@ -6,5 +6,10 @@
         <%= link_to "ROM", new_patient_rom_scale_path(patient), class: "undefined-scale btn btn-secondary", local: true %>
       </div>
     <% end %>
+    <% if patient.mmt_scales.blank? %>
+      <div class="undefined-scale-item col-sm-4">
+        <%= link_to "MMT", new_patient_mmt_scale_path(patient), class: "undefined-scale btn btn-secondary", local: true %>
+      </div>
+    <% end %>
   </div>
 </div>
