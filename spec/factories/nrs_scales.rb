@@ -1,5 +1,8 @@
 FactoryBot.define do
   factory :nrs_scale do
-    patient { nil }
+    rating { 1 }
+    status { nil }
+    supplement { nil }
+    association :patient
   end
 end

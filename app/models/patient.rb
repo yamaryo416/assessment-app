@@ -4,7 +4,7 @@ class Patient < ApplicationRecord
   belongs_to :therapist
   has_many :rom_scales, dependent: :destroy
   has_many :mmt_scales, dependent: :destroy
-  has_many :nrs_scales, dependent: :destory
+  has_many :nrs_scales, dependent: :destroy
 
   validates :first_name, presence: true, length: { maximum: 10 }
   validates :last_name, presence: true, length: { maximum: 10 }
