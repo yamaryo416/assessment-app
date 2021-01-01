@@ -195,6 +195,10 @@ ja:
         left_finger: 左手指
         right_toe: 右足趾
         left_toe: 左足趾
+      brs_scale:
+        upper_limb: 上肢
+        finger: 手指
+        lower_limb: 下肢
   enums:
     patient:
       sex:
@@ -1029,3 +1033,28 @@ ja:
         undefined: 未選択
         impaired: 鈍麻
         normal: 正常
+    brs_scale:
+      upper_limb:
+        undefined: 未選択
+        stage_one: ステージI
+        stage_two: ステージⅡ
+        stage_three: ステージⅢ
+        stage_four: ステージⅣ
+        stage_five: ステージⅤ
+        stage_six: ステージⅥ
+      finger:
+        undefined: 未選択
+        stage_one: ステージI
+        stage_two: ステージⅡ
+        stage_three: ステージⅢ
+        stage_four: ステージⅣ
+        stage_five: ステージⅤ
+        stage_six: ステージⅥ
+      lower_limb:
+        undefined: 未選択
+        stage_one: ステージI
+        stage_two: ステージⅡ
+        stage_three: ステージⅢ
+        stage_four: ステージⅣ
+        stage_five: ステージⅤ
+        stage_six: ステージⅥ
