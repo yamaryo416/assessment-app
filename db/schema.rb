@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_01_113153) do
+ActiveRecord::Schema.define(version: 2021_01_01_121620) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -228,6 +228,35 @@ ActiveRecord::Schema.define(version: 2021_01_01_113153) do
     t.index ["patient_id"], name: "index_rom_scales_on_patient_id"
   end
 
+  create_table "sias_scales", force: :cascade do |t|
+    t.integer "shoulder_motor_function"
+    t.float "finger_motor_function"
+    t.integer "hip_motor_function"
+    t.integer "knee_motor_function"
+    t.integer "foot_motor_function"
+    t.float "upper_limb_muscle_tone"
+    t.float "lower_limb_muscle_tone"
+    t.float "upper_limb_tendon_reflex"
+    t.float "lower_limb_tendon_reflex"
+    t.integer "upper_limb_tactile"
+    t.integer "lower_limb_tactile"
+    t.integer "upper_limb_sense_of_position"
+    t.integer "lower_limb_sense_of_position"
+    t.integer "shoulder_joint_rom"
+    t.integer "knee_joint_rom"
+    t.integer "pain"
+    t.integer "trunk_verticality"
+    t.integer "abdominal_mmt"
+    t.integer "visuospatial_cognition"
+    t.float "speech"
+    t.integer "gripstrength"
+    t.integer "quadriceps_mmt"
+    t.bigint "patient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_sias_scales_on_patient_id"
+  end
+
   create_table "tactile_scales", force: :cascade do |t|
     t.integer "right_upper_arm"
     t.integer "left_upper_arm"
@@ -297,6 +326,7 @@ ActiveRecord::Schema.define(version: 2021_01_01_113153) do
   add_foreign_key "nrs_scales", "patients"
   add_foreign_key "patients", "therapists"
   add_foreign_key "rom_scales", "patients"
+  add_foreign_key "sias_scales", "patients"
   add_foreign_key "tactile_scales", "patients"
   add_foreign_key "tendon_reflex_scales", "patients"
 end
