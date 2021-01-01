@@ -145,6 +145,15 @@ ja:
         rating: NRS
         status: 状態
         supplement: 補足
+      mas_scale:
+        right_elbow_joint: 右肘関節
+        left_elbow_joint: 左肘関節
+        right_wrist_joint: 右手関節
+        left_wrist_joint: 左手関節
+        right_knee_joint: 右膝関節
+        left_knee_joint: 左膝関節
+        right_ankle_joint: 右足関節
+        left_ankle_joint: 左足関節
   enums:
     patient:
       sex:
@@ -648,3 +657,68 @@ ja:
         resting: 安静時
         moving: 体動時
         loading: 荷重時
+    mas_scale:
+      right_elbow_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      left_elbow_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      right_wrist_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      left_wrist_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      right_knee_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      left_knee_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      right_ankle_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      left_ankle_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
