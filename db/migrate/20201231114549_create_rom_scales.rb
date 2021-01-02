@@ -1,4 +1,4 @@
-class CreateRomScales < ActiveRecord::Migration[6.1]
+class CreateRomScales < ActiveRecord::Migration[6.0]
   def change
     create_table :rom_scales do |t|
       t.integer :right_shoulder_flexion

@@ -1,4 +1,4 @@
-class CreateMmtScales < ActiveRecord::Migration[6.1]
+class CreateMmtScales < ActiveRecord::Migration[6.0]
   def change
     create_table :mmt_scales do |t|
       t.integer :neck_flexion
