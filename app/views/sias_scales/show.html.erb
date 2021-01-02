@@ -3,7 +3,9 @@
 <div class="main-contents patient-page show-sias show-scale">
   <div class="container">
     <%= show_scale_link_section("SIAS", "sias_scales", @patient, @sias_scale) %>
-    <p class="sias-total-score show-total-score">得点　<%= @sias_scale.total_score %>点</p>
+    <div class="sias-overview overview">
+      <p class="sias-total-score show-total-score">得点　<%= @sias_scale.total_score %>点</p>
+    </div>
     <%= render "show_sias_scale_table", sias_scale: @sias_scale %>
     <%= render "sias_scales/modal/explain_modal" %>
   </div>
