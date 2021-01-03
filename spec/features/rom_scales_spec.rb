@@ -68,11 +68,11 @@ RSpec.feature "RomScales", type: :feature do
     expect(page).to have_selector ".page-title", text: "ROM"
     expect(page).to have_selector ".limit-part-detail",
                                   text: "右肩関節屈曲 左肩関節屈曲 右肩関節伸展 右前腕回外 右手関節背屈"
-    expect(page).to have_selector ".right_shoulder_flexion_score", text: "90°"
-    expect(page).to have_selector ".left_shoulder_flexion_score", text: "60°"
-    expect(page).to have_selector ".right_shoulder_extension_score", text: "0°"
-    expect(page).to have_selector ".right_forearm_supination_score", text: "20°"
-    expect(page).to have_selector ".right_wrist_extension_score", text: "10°"
+    expect(page).to have_selector ".right_shoulder_flexion_score", text: "90"
+    expect(page).to have_selector ".left_shoulder_flexion_score", text: "60"
+    expect(page).to have_selector ".right_shoulder_extension_score", text: "0"
+    expect(page).to have_selector ".right_forearm_supination_score", text: "20"
+    expect(page).to have_selector ".right_wrist_extension_score", text: "10"
     expect(page).to have_link "ROM一覧"
     expect(page).to have_link "ROMを編集"
     expect(page).to have_link "ROMを削除"
@@ -102,9 +102,9 @@ RSpec.feature "RomScales", type: :feature do
     expect(page).to have_selector ".rom0-limit-part-count",
                                   text: "8箇所に可動域制限があります。"
     click_on "詳細"
-    expect(page).to have_selector ".right_elbow_flexion_score", text: "0°"
-    expect(page).to have_selector ".right_wrist_flexion_score", text: "0°"
-    expect(page).to have_selector ".right_hip_flexion_score", text: "0°"
+    expect(page).to have_selector ".right_elbow_flexion_score", text: "0"
+    expect(page).to have_selector ".right_wrist_flexion_score", text: "0"
+    expect(page).to have_selector ".right_hip_flexion_score", text: "0"
   end
 
   scenario "destory patient rom", js: true do
