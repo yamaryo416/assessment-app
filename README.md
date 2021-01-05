@@ -1,24 +1,20 @@
-# README
+#  評価APP
+病院の理学療法士が患者を評価(例えば、関節がどれくらい動くか、筋力がどれくらいあるか)した際に、手軽に記録し、参照することができるアプリ。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+患者を作成し、自身の作成した患者のみ参照することができる。
+現場で使用される頻度が高い、13種類の評価スケールを患者ごとに保存することができる。
+患者ページにて実施した評価の結果が一覧で表示され、患者の全体像を把握することができる。
 
-Things you may want to cover:
+## アプリケーションの機能一覧
+-管理者のみユーザー作成機能
+-認証機能
+-患者情報操作機能（作成・一覧・詳細・編集・削除）
+-ページネーション機能
+-13個の評価スケール操作機能(作成・一覧・詳細・編集・削除)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##　アプリケーション内で使用している技術一覧
+-環境構築 Docker
+-インフラ　Heroku
+-データベース Heroku Postgres
+-デプロイ TravisCIにてCICDパイプラインを構築

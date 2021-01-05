@@ -1,6 +1,11 @@
 <% provide(:title, "ログイン") %>
 <div class="container">
   <div class="main-contents new-therapist">
+    <div class="portfolio">
+      <p>テストユーザー</p>
+      <p>ユーザーID: 88888888</p>
+      <p>パスワード: password</p>
+    </div>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form_group col-xs-12">
         <%= f.label :unique_id %><br />
