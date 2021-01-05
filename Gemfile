@@ -38,6 +38,7 @@ gem "kaminari-bootstrap"
 gem 'faker'
 gem 'enum_help'
 gem 'spring'
+gem 'ransack'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
