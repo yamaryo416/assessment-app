@@ -1,0 +1,11 @@
+<div class="search-section col-12 col-md-4">
+  <%= search_form_for  q, url: patients_path do |f| %>
+    <div class="input-group">
+      <%= f.search_field :first_name_cont, class: "form-control", placeholder: "性" %>
+      <%= f.search_field :last_name_cont, class: "form-control", placeholder: "名" %>
+      <div class="input-group-append">
+        <%= f.submit "検索", class: "custom-btn btn-radius-solid" %>
+      </div>
+    </div>
+  <% end %>
+</div>

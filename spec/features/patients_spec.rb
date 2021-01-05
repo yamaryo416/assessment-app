@@ -29,6 +29,18 @@ RSpec.feature "Patients", type: :feature do
       expect(all(".patient-box").size).to eq 7
     end
 
+    scenario "search a patient" do
+      find("input[name='q[first_name_cont]']").set "佐藤"
+      find("input[name='q[last_name_cont]']").set "花子"
+      click_on "検索"
+      expect(all(".patient-box").size).to eq 1
+      expect(page).to have_content "佐藤 花子"
+      find("input[name='q[first_name_cont]']").set "hoge"
+      find("input[name='q[last_name_cont]']").set "hoge"
+      click_on "検索"
+      expect(all(".patient-box").size).to eq 0
+    end
+
     scenario "create a new patient" do
       find(".new-patient-link a").click
       expect(page).to have_current_path new_patient_path

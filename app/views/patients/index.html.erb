@@ -2,8 +2,11 @@
 <%= render "shared/breadcrumb", patient: false, scale: false %>
 <div class="main-contents patient-index-page">
   <div class="container">
-    <div class="new-patient-link link-section">
-      <%= link_to "患者登録", new_patient_path, class: "btn btn-primary" %>
+    <div class="link-section-and-search-section row">
+      <div class="new-patient-link link-section col-12 col-md-8">
+        <%= link_to "患者登録", new_patient_path, class: "btn btn-primary" %>
+      </div>
+      <%= render "search_form", q: @q %>
     </div>
     <table class="table">
       <thead>
