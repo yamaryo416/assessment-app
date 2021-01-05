@@ -4,9 +4,11 @@ class PatientsController < ApplicationController
 
   def index
     if current_therapist.has_role? :admin
-      @patients = Patient.recent.page(params[:page]).per(10)
+      @q = Patient.ransack(params[:q])
+      @patients = @q.result.recent.page(params[:page]).per(10)
     else
-      @patients = current_therapist.patients.recent.page(params[:page]).per(10)
+      @q = current_therapist.patients.ransack(params[:q])
+      @patients = @q.result.recent.page(params[:page]).per(10)
     end
   end
 
