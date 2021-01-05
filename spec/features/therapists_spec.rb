@@ -28,7 +28,7 @@ RSpec.feature "Therapists", type: :feature do
     expect(page).to have_link "患者登録", count: 2
     expect(page).to have_link "ユーザー作成"
     expect(page).to have_link "ユーザー一覧"
-    expect(page).not_to have_link "パスワードを変更する"
+    expect(page).not_to have_link "パスワード変更"
     expect(page).to have_link "ログアウト"
   end
 
@@ -44,7 +44,7 @@ RSpec.feature "Therapists", type: :feature do
     expect(page).to have_link "患者登録", count: 2
     expect(page).not_to have_link "ユーザー作成"
     expect(page).not_to have_link "ユーザー一覧"
-    expect(page).to have_link "パスワードを変更する"
+    expect(page).to have_link "パスワード変更"
     expect(page).to have_link "ログアウト"
   end
 
@@ -97,7 +97,7 @@ RSpec.feature "Therapists", type: :feature do
   scenario "edit therapist password" do
     sign_in therapist
     visit patients_path
-    click_on "パスワードを変更する"
+    click_on "パスワード変更"
     expect(page).to have_current_path edit_therapist_registration_path
     expect(page).to have_selector ".page-title", text: "パスワード編集"
     fill_in "パスワード", with: "hogehoge"
