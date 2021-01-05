@@ -195,7 +195,11 @@ footer{
 @media screen and (max-width: 768px) {
   .patient-details{
     .sex-and-age-content{
+      font-size: 10px;
       padding-left: 15px;
+    }
+    .height-and-weight-content{
+      font-size: 10px;
     }
     .edit-link{
       margin-top: 20px;
