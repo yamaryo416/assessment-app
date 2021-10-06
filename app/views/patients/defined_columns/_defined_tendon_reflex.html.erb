@@ -1,0 +1,23 @@
+<% if patient.tendon_reflex_scales.present? %>
+  <div class="defined-scale-item row">
+    <div class="col-sm-4 define-scale-content">
+      <%= link_to "深部腱反射", patient_tendon_reflex_scales_path(patient), class: "defined-scale btn btn-primary", local: true %>
+    </div>
+    <p class="tendon-reflex-hyperreflexia-and-hyporeflexia score-part col-sm-3">
+      <% if patient.tendon_reflex_scales.last.decorate.hyperreflexia_part.empty? %>
+        腱反射亢進:なし
+      <% else %>
+        <%= link_to "腱反射亢進: #{patient.tendon_reflex_scales.last.decorate.hyperreflexia_part.size}箇所", "#", class: "tendon-reflex-hyperreflexia-part-count", data: {toggle: "modal", target: "#tendon-reflex-hyperreflexia-part" } %>
+        <%= render "patients/modal/tendon_reflex_hyperreflexia_modal", patient: patient %>
+      <% end %>
+    </p>
+    <p class="tendon-reflex-hyporeflexia-count score-part col-sm-3">
+      <% if patient.tendon_reflex_scales.last.decorate.hyporeflexia_part.empty? %>
+        腱反射低下:なし
+      <% else %>
+        <%= link_to "腱反射低下: #{patient.tendon_reflex_scales.last.decorate.hyporeflexia_part.size}箇所", "#", class: "tendon-reflex-hyporeflexia-part-count", data: {toggle: "modal", target: "#tendon-reflex-hyporeflexia-part" } %>
+        <%= render "patients/modal/tendon_reflex_hyporeflexia_modal", patient: patient %>
+      <% end %>
+    </p>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<% provide(:title, "MAS作成") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "MAS" %>
+<div class="main-contents patient-page new-mas new-section">
+  <div class="container">
+    <%= form_scale_link_section("MAS", "mas_scales", @patient) %>
+    <%= form_with(url: patient_mas_scales_path, scope: :mas_scale, local: true) do |f| %>
+      <%= render "form", f: f, mas_scale: @mas_scale %>
+      <div class="submit-form">
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>

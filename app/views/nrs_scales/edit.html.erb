@@ -1,0 +1,12 @@
+<% provide(:title, "NRS編集") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "NRS" %>
+<div class="main-contents patient-page edit-nrs edit-section">
+  <div class="container">
+    <%= render "shared/error_messages", model: @nrs_scale %>
+    <%= form_scale_link_section("NRS", "nrs_scales", @patient) %>
+    <%= form_with(url: patient_nrs_scale_path(id: @nrs_scale), scope: :nrs_scale, local: true, method: :patch) do |f| %>
+      <%= render "form", f: f %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

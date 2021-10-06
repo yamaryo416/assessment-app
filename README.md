@@ -1,24 +1,32 @@
-# README
+# 評価 APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+病院の理学療法士が患者を評価(例えば、関節がどれくらい動くか、筋力がどれくらいあるか)した際に、  
+手軽に記録し、参照することができるアプリ。
+[トップページのリンク](https://ryo-assessment-app.herokuapp.com/)
 
-Things you may want to cover:
+![Alt 今日のスケジュールの画面](/images/patient-detail-page.png)
 
-* Ruby version
+## 概要
 
-* System dependencies
+患者を作成し、自身の作成した患者のみ参照することができます。  
+現場で使用される頻度が高い、13 種類の評価スケールを患者ごとに保存することができます。  
+患者ページにて実施した評価の結果が一覧で表示され、患者の全体像を把握することができます。
 
-* Configuration
+## 機能一覧
 
-* Database creation
+- 管理者のみユーザー作成機能
+- 認証機能
+- 患者情報操作機能（作成・一覧・詳細・編集・削除）
+- ページネーション機能
+- 検索機能
+- 13 個の評価スケール操作機能(作成・一覧・詳細・編集・削除)
 
-* Database initialization
+##　使用技術
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby 2.7.2
+- Ruby on Rails 6.0.3
+- RSpec
+- Docker/docker-compose
+- Heroku
+- Postgres
+- TravisCI CI/CD

@@ -1,0 +1,32 @@
+<div class="collapse" id="shoulder_rom_score">
+  <div class="card card-body">
+    <h3>肩関節</h3>
+    <div class="d-flex justify-content-center">
+      <div class="shoulder_rom_head part-head score-part-head">
+        <dd class="left-top">単位(°)</dd>
+        <dd>屈曲</dd>
+        <dd>伸展</dd>
+        <dd>内転</dd>
+        <dd>外転</dd>
+        <dd>内旋(1st)</dd>
+        <dd>外旋(1st)</dd>
+        <dd>内旋(2st)</dd>
+        <dd>外旋(2st)</dd>
+        <dd>内旋(3st)</dd>
+        <dd>外旋(3st)</dd>
+      </div>
+      <div class="right_shoulder_rom_score rom-score" >
+        <dd class="direction-head">右</dd>
+        <% rom_scale.right_shoulder_scale_score.each do |attr_name, score| %>
+          <dd class="<%= attr_name %>_score"><%= score %></dd>
+        <% end %>
+      </div>
+      <div class="left_shoulder_rom_score rom-score">
+        <dd class="direction-head">左</dd>
+        <% rom_scale.left_shoulder_scale_score.each do |attr_name, score| %>
+          <dd class="<%= attr_name %>_score"><%= score %></dd>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

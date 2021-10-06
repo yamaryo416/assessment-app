@@ -1,0 +1,13 @@
+<% provide(:title, "触覚検査編集") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "触覚検査" %>
+<div class="main-contents patient-page edit-tactile edit-section">
+  <div class="container">
+    <%= form_scale_link_section("触覚検査", "tactile_scales", @patient) %>
+    <%= form_with(url: patient_tactile_scale_path(id: @tactile_scale), scope: :tactile_scale, local: true, method: :patch) do |f| %>
+      <%= render "form", f: f, tactile_scale: @tactile_scale %>
+      <div class="submit-form">
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>

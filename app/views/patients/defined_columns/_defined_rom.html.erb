@@ -1,0 +1,15 @@
+<% if patient.rom_scales.present? %>
+  <div class="defined-scale-item row">
+    <div class="col-sm-4 define-scale-content">
+      <%= link_to "ROM", patient_rom_scales_path(patient), class: "defined-scale btn btn-primary", local: true %>
+    </div>
+    <p class="rom-limit score-part col-sm-3">
+      <% if patient.rom_scales.last.decorate.limit_part.empty? %>
+        可動域制限: なし
+      <% else %>
+        <%= link_to "可動域制限: #{patient.rom_scales.last.decorate.limit_part.size}箇所", "#", class: "rom-limit-part-count", data: {toggle: "modal", target: "#rom-limit-part" } %>
+        <%= render "patients/modal/rom_limit_modal", patient: patient %>
+      <% end %>
+    </p>
+  </div>
+<% end %>

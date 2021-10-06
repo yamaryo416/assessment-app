@@ -1,0 +1,1487 @@
+ja:
+  activerecord:
+    models:
+      patient: 患者
+      rom_scale: ROM
+    attributes:
+      patient:
+        first_name: 性
+        last_name: 名
+        sex: 性別
+        age: 年齢
+        weight: 体重
+        height: 身長
+        man: 男性
+        woman: 女性
+      rom_scale:
+        right_shoulder_flexion: 右肩関節屈曲
+        left_shoulder_flexion: 左肩関節屈曲
+        right_shoulder_extension: 右肩関節伸展
+        left_shoulder_extension: 左肩関節伸展
+        right_shoulder_adduction: 右肩関節内転
+        left_shoulder_adduction: 左肩関節内転
+        right_shoulder_abduction: 右肩関節外転
+        left_shoulder_abduction: 左肩関節外転
+        right_first_shoulder_internal_rotation: 右肩関節内旋(1st)
+        left_first_shoulder_internal_rotation: 左肩関節内旋(1st)
+        right_first_shoulder_external_rotation: 右肩関節外旋(1st)
+        left_first_shoulder_external_rotation: 左肩関節外旋(1st)
+        right_second_shoulder_internal_rotation: 右肩関節内旋(2st)
+        left_second_shoulder_internal_rotation: 左肩関節内旋(2st)
+        right_second_shoulder_external_rotation: 右肩関節外旋(2st)
+        left_second_shoulder_external_rotation: 左肩関節外旋(2st)
+        right_third_shoulder_internal_rotation: 右肩関節内旋(3st)
+        left_third_shoulder_internal_rotation: 左肩関節内旋(3st)
+        right_third_shoulder_external_rotation: 右肩関節外旋(3st)
+        left_third_shoulder_external_rotation: 右肩関節外旋(3st)
+        right_elbow_flexion: 右肘関節屈曲
+        left_elbow_flexion: 左肘関節屈曲
+        right_elbow_extension: 右肘関節伸展
+        left_elbow_extension: 左肘関節伸展
+        right_forearm_pronation: 右前腕回内
+        left_forearm_pronation: 左前腕回内
+        right_forearm_supination: 右前腕回外
+        left_forearm_supination: 左前腕回外
+        right_wrist_flexion: 右手関節掌屈
+        left_wrist_flexion: 左手関節掌屈
+        right_wrist_extension: 右手関節背屈
+        left_wrist_extension: 左手関節背屈
+        right_wrist_adduction: 右手関節橈屈
+        left_wrist_adduction: 左手関節橈屈
+        right_wrist_abduction: 右手関節尺屈
+        left_wrist_abduction: 左手関節尺屈
+        right_hip_flexion: 右股関節屈曲
+        left_hip_flexion: 左股関節屈曲
+        right_hip_extension: 右股関節伸展
+        left_hip_extension: 左股関節伸展
+        right_hip_adduction: 右股関節内転
+        left_hip_adduction: 左股関節内転
+        right_hip_abduction: 右股関節外転
+        left_hip_abduction: 左股関節外転
+        right_hip_internal_rotation: 右股関節内旋
+        left_hip_internal_rotation: 左股関節内旋
+        right_hip_external_rotation: 右股関節外旋
+        left_hip_external_rotation: 左股関節外旋
+        right_knee_flexion: 右膝関節屈曲
+        left_knee_flexion: 左膝関節屈曲
+        right_knee_extension: 右膝関節伸展
+        left_knee_extension: 左膝関節伸展
+        right_first_ankle_flexion: 右足関節背屈(膝屈曲位)
+        left_first_ankle_flexion: 左足関節背屈(膝屈曲位)
+        right_second_ankle_flexion: 右足関節背屈(膝伸展位)
+        left_second_ankle_flexion: 左足関節背屈(膝伸展位)
+        right_ankle_extension: 右足関節底屈
+        left_ankle_extension: 左足関節底屈
+        right_ankle_adduction: 右足関節内転
+        left_ankle_adduction: 左足関節内転
+        right_ankle_abduction: 右足関節外転
+        left_ankle_abduction: 左足関節外転
+        right_ankle_pronation: 右足関節回内
+        left_ankle_pronation: 左足関節回内
+        right_ankle_supination: 右足関節回外
+        left_ankle_supination: 左足関節回外
+      mmt_scale:
+        neck_flexion: 頸部屈曲
+        neck_extension: 頸部伸展
+        trunk_flexion: 体幹屈曲
+        trunk_extension: 体幹伸展
+        right_shoulder_flexion: 右肩関節屈曲
+        left_shoulder_flexion: 左肩関節屈曲
+        right_shoulder_extension: 右肩関節伸展
+        left_shoulder_extension: 左肩関節伸展
+        right_shoulder_abduction: 右肩関節外転
+        left_shoulder_abduction: 左肩関節外転
+        right_shoulder_horizontal_adduction: 右肩関節水平内転
+        left_shoulder_horizontal_adduction: 左肩関節水平内転
+        right_shoulder_horizontal_abduction: 右肩関節水平外転
+        left_shoulder_horizontal_abduction: 左肩関節水平外転
+        right_shoulder_internal_rotation: 右肩関節内旋
+        left_shoulder_internal_rotation: 左肩関節内旋
+        right_shoulder_external_rotation: 右肩関節外旋
+        left_shoulder_external_rotation: 左肩関節外旋
+        right_elbow_flexion: 右肘関節屈曲
+        left_elbow_flexion: 左肘関節屈曲
+        right_elbow_extension: 右肘関節伸展
+        left_elbow_extension: 左肘関節伸展
+        right_forearm_pronation: 右前腕回内
+        left_forearm_pronation: 左前腕回内
+        right_forearm_supination: 右前腕回外
+        left_forearm_supination: 左前腕回外
+        right_wrist_flexion: 右手関節掌屈
+        left_wrist_flexion: 左手関節掌屈
+        right_wrist_extension: 右手関節背屈
+        left_wrist_extension: 左手関節背屈
+        right_first_hip_flexion: 右股関節屈曲(腸腰筋)
+        left_first_hip_flexion: 左股関節屈曲(腸腰筋)
+        right_second_hip_flexion: 右股関節屈曲(縫工筋)
+        left_second_hip_flexion: 左股関節屈曲(縫工筋)
+        right_first_hip_extension: 右股関節伸展(大臀筋、ハム)
+        left_first_hip_extension: 左股関節伸展(大臀筋、ハム)
+        right_second_hip_extension: 右股関節伸展(大殿筋)
+        left_second_hip_extension: 左股関節伸展(大殿筋)
+        right_hip_adduction: 右股関節内転
+        left_hip_adduction: 左股関節内転
+        right_first_hip_abduction: 右股関節外転(中殿筋、小殿筋)
+        left_first_hip_abduction: 左股関節外転(中殿筋、小殿筋)
+        right_second_hip_abduction: 右股関節外転(大腿筋膜張筋)
+        left_second_hip_abduction: 左股関節外転(大腿筋膜張筋)
+        right_hip_internal_rotation: 右股関節内旋
+        left_hip_internal_rotation: 左股関節内旋
+        right_hip_external_rotation: 右股関節外旋
+        left_hip_external_rotation: 左股関節外旋
+        right_knee_flexion: 右膝関節屈曲
+        left_knee_flexion: 左膝関節屈曲
+        right_knee_extension: 右膝関節伸展
+        left_knee_extension: 左膝関節伸展
+        right_ankle_flexion: 右足関節背屈
+        left_ankle_flexion: 左足関節背屈
+        right_ankle_extension: 右足関節底屈
+        left_ankle_extension: 右足関節底屈
+        right_ankle_pronation: 右内返し
+        left_ankle_pronation: 左内返し
+        right_ankle_supination: 右外返し
+        left_ankle_supination: 左外返し
+      nrs_scale:
+        rating: NRS
+        status: 状態
+        supplement: 補足
+      mas_scale:
+        right_elbow_joint: 右肘関節
+        left_elbow_joint: 左肘関節
+        right_wrist_joint: 右手関節
+        left_wrist_joint: 左手関節
+        right_knee_joint: 右膝関節
+        left_knee_joint: 左膝関節
+        right_ankle_joint: 右足関節
+        left_ankle_joint: 左足関節
+      tendon_reflex_scale:
+        jaw: 下顎反射
+        abdominal: 腹筋反射
+        right_pectoral: 右胸筋反射
+        left_pectoral: 左胸筋反射
+        right_biceps: 右上腕二頭筋反射
+        left_biceps: 左上腕二頭筋反射
+        right_triceps: 右上腕三頭筋反射
+        left_triceps: 左上腕三頭筋反射
+        right_brachioradialis: 右腕橈骨筋反射
+        left_brachioradialis: 左腕橈骨筋反射
+        right_pronator: 右回内筋肉反射
+        left_pronator: 左回内筋肉反射
+        right_patellar_tendon: 右膝蓋腱反射
+        left_patellar_tendon: 左膝蓋腱反射
+        right_achilles_tendon: 右アキレス腱反射
+        left_achilles_tendon: 左アキレス腱反射
+      tactile_scale:
+        right_upper_arm: 右上腕
+        left_upper_arm: 左上腕
+        right_forearm: 右前腕
+        left_forearm: 左前腕
+        right_hand: 右手
+        left_hand: 左手
+        right_thigh: 右大腿
+        left_thigh: 左大腿
+        right_lower_leg: 右下腿
+        left_lower_leg: 左下腿
+        right_rearfoot: 右後足部
+        left_rearfoot: 左後足部
+        right_forefoot: 右前足部
+        left_forefoot: 左前足部
+      bathyesthesia_scale:
+        right_upper_limb: 右上肢
+        left_upper_limb: 左上肢
+        right_lower_limb: 右下肢
+        left_lower_limb: 左下肢
+        right_finger: 右手指
+        left_finger: 左手指
+        right_toe: 右足趾
+        left_toe: 左足趾
+      brs_scale:
+        upper_limb: 上肢
+        finger: 手指
+        lower_limb: 下肢
+      sias_scale:
+        shoulder_motor_function: 上肢近位
+        finger_motor_function: 上肢遠位
+        hip_motor_function: 下肢近位(股)
+        knee_motor_function: 下肢近位(膝)
+        foot_motor_function: 下肢遠位
+        upper_limb_muscle_tone: 上肢筋緊張
+        lower_limb_muscle_tone: 下肢筋緊張
+        upper_limb_tendon_reflex: 上肢腱反射
+        lower_limb_tendon_reflex: 下肢腱反射
+        upper_limb_tactile: 上肢触覚(手掌)
+        lower_limb_tactile: 下肢触覚(足底)
+        upper_limb_sense_of_position: 上肢位置覚(母指or示指)
+        lower_limb_sense_of_position: 下肢位置覚(母趾)
+        shoulder_joint_rom: 上肢関節可動域
+        knee_joint_rom: 下肢関節可動域
+        pain: 疼痛
+        trunk_verticality: 垂直性
+        abdominal_mmt: 腹筋
+        visuospatial_cognition: 視空間認知
+        speech: 言語
+        gripstrength: 握力
+        quadriceps_mmt: 健側大腿四頭筋力
+      fact_scale:
+        sitting_with_upper_limb_support: 静的座位保持能力(上肢支持利用)
+        sitting_with_no_support: 静的座位保持能力(上肢支持不使用)
+        lower_lateral_dynamic_sitting: 下方へのリーチに伴う動的座位保持能力
+        forward_dynamic_sitting: 臀部移動に伴う動的座位保持能力
+        lateral_dynamic_sitting: 側方への重心移動に伴う動的座位保持能力
+        rear_lateral_dynamic_sitting: 下肢拳上時に伴う動的座位保持能力
+        rear_dynamic_sitting: 両下肢拳上に伴う動的座位保持能力
+        lateral_dynamic_sitting_with_trunk_rotation: 骨盤の前後移動に伴う動的座位保持能力
+        trunk_rotation: 体幹回旋に伴う動的座位保持能力
+        trunk_extenxion: 上肢拳上に伴う動的座位保持能力
+      fbs_scale:
+        stand_up: 椅子からの立ち上がり
+        standing: 立位保持
+        sitting: 座位保持(寄りかからずに座る)
+        sit_down: 着座
+        transfer: 移乗
+        standing_with_eyes_close: 閉眼立位保持
+        standing_with_leg_close: 閉脚立位保持
+        reach_forward: 上肢の前方リーチ
+        pickup_from_floor: 床から物を拾う
+        turn_around: 左右の肩ごしに後ろを振り向く
+        one_rotation: 360°回転
+        stepup_and_down: 段差昇降
+        tandem_standing: タンデム立位
+        standing_with_one_leg: 片脚立位保持
+      bestest_scale:
+        from_sitting_to_standing: 座位から立位
+        standing_on_tiptoes: 爪先立ち
+        standing_on_one_leg: 片足立ち
+        forward_step: 修正ステップ-前方
+        back_step: 修正ステップ-後方
+        lateral_step: 修正ステップ-側方
+        standing: 静止立位(開眼)
+        standing_with_eyes_close: 静止立位(閉眼)
+        standing_on_the_slope: 斜面台(閉眼)
+        change_walking_speed: 歩行速度の変化
+        walking_with_rotating_the_head: 頭を水平回転させながらの歩行
+        pibot_turn: 歩行時ピポットターン
+        straddling_obstacles: 障害物跨ぎ
+        tug: TUG二重課題
+  enums:
+    patient:
+      sex:
+        undefined: 未選択
+        man: 男性
+        woman: 女性
+    mmt_scale:
+      neck_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      neck_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      trunk_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      trunk_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_shoulder_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_shoulder_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_shoulder_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_shoulder_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_shoulder_abduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_shoulder_abduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_shoulder_horizontal_adduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_shoulder_horizontal_adduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_shoulder_horizontal_abduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_shoulder_horizontal_abduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_shoulder_internal_rotation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_shoulder_internal_rotation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_shoulder_external_rotation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_shoulder_external_rotation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_elbow_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_elbow_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_elbow_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_elbow_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_forearm_pronation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_forearm_pronation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_forearm_supination:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_forearm_supination:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_wrist_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_wrist_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_wrist_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_wrist_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_first_hip_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_first_hip_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_second_hip_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_second_hip_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_first_hip_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_first_hip_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_second_hip_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_second_hip_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_hip_adduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_hip_adduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_first_hip_abduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_first_hip_abduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_second_hip_abduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_second_hip_abduction:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_hip_internal_rotation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_hip_internal_rotation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_hip_external_rotation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_hip_external_rotation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_knee_flexion:
+        undefined: 未選択
+        zero: 0,
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_knee_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_knee_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_knee_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_ankle_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_ankle_flexion:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_ankle_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        trace_poor: 2-
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_ankle_extension:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        trace_poor: 2-
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_ankle_pronation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_ankle_pronation:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      right_ankle_supination:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      left_ankle_supination:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+      template:
+        undefined: 未選択
+        zero: 0
+        trace: 1
+        poor: 2
+        fair: 3
+        good: 4
+        normal: 5
+    nrs_scale:
+      status:
+        undefined: 未選択
+        resting: 安静時
+        moving: 体動時
+        loading: 荷重時
+    mas_scale:
+      right_elbow_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      left_elbow_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      right_wrist_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      left_wrist_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      right_knee_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      left_knee_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      right_ankle_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+      left_ankle_joint:
+        undefined: 未選択
+        no_enhancement: 0
+        mild_enhancement: 1
+        mild_increase: 1+
+        increase: 2
+        significant: 3
+        rigidity: 4
+    tendon_reflex_scale:
+      jaw:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      abdominal:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      right_pectoral:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      left_pectoral:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      right_biceps:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      left_biceps:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      right_triceps:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      left_triceps:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      right_brachioradialis:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      left_brachioradialis:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      right_pronator:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      left_pronator:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      right_patellar_tendon:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      left_patellar_tendon:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      right_achilles_tendon:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+      left_achilles_tendon:
+        undefined: 未選択
+        absent: (-)
+        diminished: (±)
+        normal: (+)
+        slightly_exaggerated: (++)
+        moderately_exaggerated: (+++)
+        markedly_exaggerated: (++++)
+    tactile_scale:
+      right_upper_arm:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      left_upper_arm:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      right_forearm:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      left_forearm:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      right_hand:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      left_hand:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      right_thigh:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      left_thigh:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      right_lower_leg:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      left_lower_leg:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      right_rearfoot:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      left_rearfoot:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      right_forefoot:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+      left_forefoot:
+        undefined: 未選択
+        absent: 脱失
+        impaired: 鈍麻
+        normal: 正常
+    bathyesthesia_scale:
+      right_upper_limb:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      left_upper_limb:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      right_lower_limb:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      left_lower_limb:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      right_finger:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      left_finger:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      right_toe:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      left_toe:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+    bathyesthesia_scale:
+      right_upper_limb:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      left_upper_limb:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      right_lower_limb:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      left_lower_limb:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      right_finger:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      left_finger:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      right_toe:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+      left_toe:
+        undefined: 未選択
+        impaired: 鈍麻
+        normal: 正常
+    brs_scale:
+      upper_limb:
+        undefined: 未選択
+        stage_one: ステージI
+        stage_two: ステージⅡ
+        stage_three: ステージⅢ
+        stage_four: ステージⅣ
+        stage_five: ステージⅤ
+        stage_six: ステージⅥ
+      finger:
+        undefined: 未選択
+        stage_one: ステージI
+        stage_two: ステージⅡ
+        stage_three: ステージⅢ
+        stage_four: ステージⅣ
+        stage_five: ステージⅤ
+        stage_six: ステージⅥ
+      lower_limb:
+        undefined: 未選択
+        stage_one: ステージI
+        stage_two: ステージⅡ
+        stage_three: ステージⅢ
+        stage_four: ステージⅣ
+        stage_five: ステージⅤ
+        stage_six: ステージⅥ
+    sias_scale:
+      shoulder_motor_function:
+        undefined: 未選択
+        no_function: 0:全く動かない
+        move_slightly: 1:わずかな動きがあるが手部が乳頭に届かない
+        move_a_little: 2:肩肘の共同運動があるが手部が口に届かない
+        awkward: 3:課題可能。中等度のあるいは著明なぎこちなさあり
+        a_little_awkward: 4:課題可能。軽度のぎこちなさあり
+        normal: 5:健側と変わらず、正常
+      finger_motor_function:
+        undefined: 未選択
+        no_function: 0:全く動かない
+        move_slightly: 1A:わずかな動きがある。または集団屈曲可能
+        group_extension_possible: 1B:集団伸展が可能
+        partial_separation_possible: 1C:分離運動が一部可能
+        move_a_little: 2.全指の分離運動可能なるも屈曲伸展が不十分
+        awkward: 3.課題可能。全指の分離運動が十分な屈曲伸展を伴って可能
+        a_little_awkward: 4.課題可能。軽度のぎこちなさあり
+        normal: 5.健側と変わらず、正常
+      hip_motor_function:
+        undefined: 未選択
+        no_function: 0:全く動かない
+        move_slightly: 1:大腿にわずかな動きがあるが足部は床から離れない
+        move_a_little: 2:股関節の屈曲運動あり、足部は床より離れるが十分ではない
+        awkward: 3:課題可能。中等度のあるいは著明なぎこちなさあり
+        a_little_awkward: 4:課題可能。軽度のぎこちなさあり
+        normal: 5:健側と変わらず、正常
+      knee_motor_function:
+        undefined: 未選択
+        no_function: 0:全く動かない
+        move_slightly: 1:下腿にわずかな動きがあるが足部は床から離れない
+        move_a_little: 2:膝関節の伸展運動あり、足部は床より離れるが十分ではない
+        awkward: 3:課題可能。中等度のあるいは著明なぎこちなさあり
+        a_little_awkward: 4:課題可能。軽度のぎこちなさあり
+        normal: 5:健側と変わらず、正常
+      foot_motor_function:
+        undefined: 未選択
+        no_function: 0:全く動かない
+        move_slightly: 1:わずかな背屈運動あるが前足部は床から離れない
+        move_a_little: 2:背屈運動あり、足部は床より離れるが十分ではない
+        awkward: 3:課題可能。中等度のあるいは著明なぎこちなさあり
+        a_little_awkward: 4:課題可能。軽度のぎこちなさあり
+        normal: 5:健側と変わらず、正常
+      upper_limb_muscle_tone:
+        undefined: 未選択
+        hypertonia: 0:上肢の筋緊張が著明に亢進している
+        moderate_hypertonia: 1A:上肢の筋緊張が中等度(はっきりと)亢進している
+        hypotonia: 1B:他動的筋緊張の低下
+        a_little_hypertonia: 2:上肢の筋緊張が軽度(わずかに)亢進している
+        normal: 3:正常、健側と対照的
+      lower_limb_muscle_tone:
+        undefined: 未選択
+        hypertonia: 0:下肢の筋緊張が著明に亢進している
+        moderate_hypertonia: 1A:下肢の筋緊張が中等度(はっきりと)亢進している
+        hypotonia: 1B:他動的筋緊張の低下
+        a_little_hypertonia: 2:下肢の筋緊張が軽度(わずかに)亢進している
+        normal: 3:正常、健側と対照的
+      upper_limb_tendon_reflex:
+        undefined: 未選択
+        hypertonia: 0:上腕二頭筋or上腕三頭筋が著明に亢進、もしくはクローヌス(肘、手関節)が誘発される
+        moderate_hypertonia: 1A:上腕二頭筋or上腕三頭筋が中等度亢進
+        hypotonia: 1B:上腕二頭筋or上腕三頭筋がほぼ消失
+        a_little_hypertonia: 2:上腕二頭筋or上腕三頭筋が軽度亢進
+        normal: 3:上腕二頭筋or上腕三頭筋とも正常。健側と対照的
+      lower_limb_tendon_reflex:
+        undefined: 未選択
+        hypertonia: 0:膝蓋腱反射orアキレス腱反射が著明に亢進、もしくはクローヌス(足関節)が誘発される
+        moderate_hypertonia: 1A:膝蓋腱反射orアキレス腱反射が中等度亢進
+        hypotonia: 1B:膝蓋腱反射orアキレス腱反射がほぼ消失
+        a_little_hypertonia: 2:膝蓋腱反射orアキレス腱反射が軽度亢進
+        normal: 3:膝蓋腱反射orアキレス腱反射とも正常。健側と対照的
+      upper_limb_tactile:
+        undefined: 未選択
+        loss_of_sensation: 0:強い皮膚刺激も分からない
+        moderate_decline: 1:重度あるいは中等度低下
+        milde_decline: 2:軽度低下、あるいは主観的低下、または異常感覚あり
+        normal: 正常
+      lower_limb_tactile:
+        undefined: 未選択
+        loss_of_sensation: 0:強い皮膚刺激も分からない
+        moderate_decline: 1:重度あるいは中等度低下
+        milde_decline: 2:軽度低下、あるいは主観的低下、または異常感覚あり
+        normal: 正常
+      upper_limb_sense_of_position:
+        undefined: 未選択
+        loss_of_sensation: 0:全可動域の動きも分からない
+        moderate_decline: 1:全可動域の運動なら方向が分かる
+        milde_decline: 2:ROMの1割以上の動きなら方向が分かる
+        normal: 3:ROMの1割未満の動きでも方向が分かる
+      lower_limb_sense_of_position:
+        undefined: 未選択
+        loss_of_sensation: 0:全可動域の動きも分からない
+        moderate_decline: 1:全可動域の運動なら方向が分かる
+        milde_decline: 2:ROMの5割以上の動きなら方向が分かる
+        normal: 3:ROMの5割未満の動きでも方向が分かる
+      shoulder_joint_rom:
+        undefined: 未選択
+        significant_limit: 0:60°以下
+        moderate_limit: 1:90°以下
+        milde_limit: 2:150°以下
+        normal: 3:150°以上
+      knee_joint_rom:
+        undefined: 未選択
+        significant_limit: 0:-10°以下
+        moderate_limit: 1:0°以下
+        milde_limit: 2:10°以下
+        normal: 3:10°以上
+      pain:
+        undefined: 未選択
+        significant: 0:睡眠を妨げるほどの著しい疼痛
+        moderate: 1:中等度の疼痛
+        milde: 2:加療を要しない程度の軽度の疼痛
+        normal: 3:疼痛の問題がない
+      trunk_verticality:
+        undefined: 未選択
+        impossible: 0:座位がとれない
+        need_assistance: 1:静的座位にて側方性の姿勢異常があり、指摘・指示にても修正されず、介助を要する
+        almost_possible: 2:静的座位にて側方性の姿勢異常(傾きで15°以上)があるが、指示にてほぼ垂直位にて修正・維持可能
+        normal: 3:静的座位は正常
+      abdominal_mmt:
+        undefined: 未選択
+        impossible: 0:垂直位まで起き上がれない
+        slightly_possible: 1:抵抗を加えなければ起き上がれる
+        almost_possible: 2:軽度の抵抗に抗して起き上がれる
+        normal: 3:強い抵抗に抗して起き上がれる
+      visuospatial_cognition:
+        undefined: 未選択
+        large_error: 0:15cm以上
+        moderate_error: 1:5cm以上
+        a_little_error: 2:3cm以上
+        very_slight_error: 3:3cm未満
+      speech:
+        undefined: 未選択
+        all_aphasia: 0:全失語症。全くコミュニケーションがとれない
+        severe_expressive_aphasia: 1A:重度感覚性失語症(重度混合性失語症も含む)
+        severe_sensory_aphasia: 1B:重度運動性失語症
+        mild_aphasia: 2:軽度失語症
+        normal: 3:失語症なし
+      gripstrength:
+        undefined: 未選択
+        zero: 0:0kg
+        poor: 1:10kg以下
+        fair: 2:10〜20kg
+        normal: 3:25kg以上
+      quadriceps_mmt:
+        undefined: 未選択
+        zero: 0:重力に抗しない
+        poor: 1:中等度に筋力低下
+        fair: 2:わずかな筋力低下
+        normal: 3:正常
+    fact_scale:
+      sitting_with_upper_limb_support:
+        undefined: 未選択
+        impossible: 不能:0点
+        possible: 可能:1点
+      sitting_with_no_support:
+        undefined: 未選択
+        impossible: 不能:0点
+        possible: 可能:1点
+      lower_lateral_dynamic_sitting:
+        undefined: 未選択
+        impossible: 不能:0点
+        possible: 可能:1点
+      forward_dynamic_sitting:
+        undefined: 未選択
+        impossible: 不能:0点
+        possible: 可能:2点
+      lateral_dynamic_sitting:
+        undefined: 未選択
+        impossible: 不能:0点
+        one_side: 片側:1点
+        both_sides: 両側:2点
+      rear_lateral_dynamic_sitting:
+        undefined: 未選択
+        impossible: 不能:0点
+        one_side: 片側:1点
+        both_sides: 両側:2点
+      rear_dynamic_sitting:
+        undefined: 未選択
+        impossible: 不能:0点
+        possible: 可能:2点
+      lateral_dynamic_sitting_with_trunk_rotation:
+        undefined: 未選択
+        impossible: 不能:0点
+        possible: 可能:3点
+      trunk_rotation:
+        undefined: 未選択
+        impossible: 不能:0点
+        possible: 可能:3点
+      trunk_extenxion:
+        undefined: 未選択
+        impossible: 不能:0点
+        possible: 可能:3点
+    fbs_scale:
+      stand_up:
+        undefined: 未選択
+        zero: 0:立ち上がりに中等度、ないし高度の介助が必要である
+        trace: 1:立ち上がり、または安定のために最小の介助が必要である
+        poor: 2:数回の施行後、手を使用して立ち上がりが可能である
+        fair: 3:手を使用して一人で立ち上がりが可能である
+        good: 4:立ち上がりが可能である
+      standing:
+        undefined: 未選択
+        zero: 0:介助なしには30秒間の立位保持が不可能である
+        trace: 1:数回の施行にて30秒間の立位保持が可能である
+        poor: 2:30秒間の立位保持が可能である
+        fair: 3:監視下での2分間の立位保持が可能である
+        good: 4:安全に2分間の立位保持が可能である
+      sitting:
+        undefined: 未選択
+        zero: 0:介助なしには10秒間の座位保持が不可能である
+        trace: 1:10秒間の座位保持が可能である
+        poor: 2:30秒間の座位保持が可能である
+        fair: 3:監視下での2分間の座位保持が可能である
+        good: 4:安全に2分間の座位保持が可能である
+      sit_down:
+        undefined: 未選択
+        zero: 0:座るのに介助が必要
+        trace: 1:一人で座れるが、しゃがみこみを制御できない
+        poor: 2:下腿後面を椅子に押し付けてしゃがみこみを制御する
+        fair: 3:手を用いてしゃがみこみを制御する
+        good: 4:ほとんど手を用いずに安全に座れる
+      transfer:
+        undefined: 未選択
+        zero: 0:安全確保のために2名の介助者が必要である
+        trace: 1:移乗に介助者1名が必要である
+        poor: 2:言語指示、あるいは監視下にて移乗が可能である
+        fair: 3:手を用いれば安全に移乗が可能である
+        good: 4:ほとんど手を用いずに安全に移乗が可能である
+      standing_with_eyes_close:
+        undefined: 未選択
+        zero: 0:転倒を防ぐための介助が必要である
+        trace: 1:3秒間の閉眼立位保持ができないが、安定して立っていられる
+        poor: 2:3秒間の閉眼立位保持が可能である
+        fair: 3:監視下にて10秒間の閉眼立位保持が可能である
+        good: 4:安全に10秒間の閉眼立位保持が可能である
+      standing_with_leg_close:
+        undefined: 未選択
+        zero: 0:閉脚立位をとるのに介助が必要で、閉脚で15秒間の保持も不可能である
+        trace: 1:閉脚立位をとるのに介助が必要だが、閉脚で15秒間の保持が可能である
+        poor: 2:自分で閉脚立位ができるが,30秒間の立位保持は不可能である
+        fair: 3:自分で閉脚立位ができ、監視下にて1分間の立位保持が可能である
+        good: 4:自分で閉脚立位ができ、1分間、安全に立位保持が可能である
+      reach_forward:
+        undefined: 未選択
+        zero: 0:転倒を防ぐための介助が必要である
+        trace: 1:手を伸ばせるが、監視が必要である
+        poor: 2:5cmの前方リーチが可能である
+        fair: 3:12.5cm以上の前方リーチが可能である
+        good: 4:25cm以上の前方リーチが可能である
+      pickup_from_floor:
+        undefined: 未選択
+        zero: 0:転倒を防ぐための介助が必要である
+        trace: 1:物を拾うことができず、監視が必要である
+        poor: 2:物は拾えないが、靴まで2.5~5cmくらいのところまで手を伸ばすことが可能である
+        fair: 3:監視下にて物を拾うことが可能である
+        good: 4:安全かつ簡単に物を拾うことが可能である
+      turn_around:
+        undefined: 未選択
+        zero: 0:転倒を防ぐための介助が必要である
+        trace: 1:振り向く時に監視が必要である
+        poor: 2:側方までしか振り向けないが安定している
+        fair: 3:片側のみ振り向くことができる
+        good: 4:両側とも後ろを振り向くことができる
+      one_rotation:
+        undefined: 未選択
+        zero: 0:回転中、介助が必要である
+        trace: 1:監視または言語指示が必要である
+        poor: 2:360°回転が可能だが、両側とも4秒以上かかる
+        fair: 3:一側のみ4秒以内で安全に360°の回転が可能である
+        good: 4:左右それぞれの方向に4秒以内で安全に360°の回転が可能である
+      stepup_and_down:
+        undefined: 未選択
+        zero: 0:転倒を防ぐための介助が必要、または実施困難である
+        trace: 1:最小限の介助で2回以上の踏み換えが可能である
+        poor: 2:監視下で補助具を使用せず4回の踏み換えが可能である
+        fair: 3:支持なしで8回の踏み換えが可能だが、20秒以上かかる
+        good: 4:支持なしで安全かつ20秒以内に8回の踏み換えが可能である
+      tandem_standing:
+        undefined: 未選択
+        zero: 0:足を出す時、または立位時にバランスを崩す
+        trace: 1:足を出すのに介助を要するが、15秒間の保持が可能である
+        poor: 2:自分で足をわずかにずらし、30秒間の保持が可能である
+        fair: 3:自分で足を他方の足の前におくことができ、30秒間の保持が可能である
+        good: 4:自分で継ぎ足位をとり、30秒間の保持が可能である
+      standing_with_one_leg:
+        undefined: 未選択
+        zero: 0:検査の実施困難、または転倒を防ぐための介助が必要
+        trace: 1:片脚をあげ、3秒以上の保持が不可能である
+        poor: 2:自分で片脚をあげ、3秒以上の保持が可能である
+        fair: 3:自分で片脚をあげ、5~10秒間の保持が可能である
+        good: 4:自分で片脚をあげ、10秒以上の保持が可能である
+    bestest_scale:
+      from_sitting_to_standing:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      standing_on_tiptoes:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      standing_on_one_leg:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      forward_step:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      back_step:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      lateral_step:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      standing:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      standing_with_eyes_close:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      standing_on_the_slope:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      change_walking_speed:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      walking_with_rotating_the_head:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      pibot_turn:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      straddling_obstacles:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常
+      tug:
+        undefined: 未選択
+        zero: 0)重度
+        one: 1)中等度
+        two: 2)正常

@@ -1,0 +1,16 @@
+<% provide(:title, "Mini-BESTest") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "Mini-BESTest" %>
+<div class="main-contents patient-page show-bestest show-scale">
+  <div class="container">
+    <%= show_scale_link_section("Mini-BESTest", "bestest_scales", @patient, @bestest_scale) %>
+    <div class="bestest-overview overview">
+      <p class="bestest-total-score show-total-score">得点　<%= @bestest_scale.total_score %>点</p>
+      <p class="bestest-apa-score show-subtotal-score">予測的姿勢制御　<%= @bestest_scale.apa_score %>点</p>
+      <p class="bestest-cpa-score show-subtotal-score">反応的姿勢制御　<%= @bestest_scale.cpa_score %>点</p>
+      <p class="bestest-sensory-function-score show-subtotal-score">感覚機能　<%= @bestest_scale.sensory_function_score %>点</p>
+      <p class="bestest-dynamic-walking-score show-subtotal-score">動的歩行　<%= @bestest_scale.dynamic_walking_score %>点</p>
+    </div>
+    <%= render "show_bestest_scale_table", bestest_scale: @bestest_scale %>
+    <%= render "bestest_scales/modal/explain_modal" %>
+  </div>
+</div>

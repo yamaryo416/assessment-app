@@ -1,0 +1,8 @@
+<% provide(:title, "MAS") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "MAS" %>
+<div class="main-contents patient-page show-sias">
+  <div class="container">
+    <%= show_scale_link_section("MAS", "mas_scales", @patient, @mas_scale) %>
+    <%= render "score", mas_scale: @mas_scale %>
+  </div>
+</div>

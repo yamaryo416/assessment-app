@@ -1,0 +1,18 @@
+<% if patient.nrs_scales.present? %>
+  <div class="defined-scale-item row">
+    <div class="col-sm-4 define-scale-content">
+      <%= link_to "NRS", patient_nrs_scales_path(patient), class: "defined-scale btn btn-primary", local: true %>
+    </div>
+    <div class="col-sm-3">
+      <p class="nrs-status score-part">
+        <%= patient.nrs_scales.last.decorate.status_i18n %>
+        <%= patient.nrs_scales.last.decorate.rating %>
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <p class="nrs-supplement score-part">
+        <%= patient.nrs_scales.last.decorate.supplement %>
+      </p>
+    </div>
+  </div>
+<% end %>

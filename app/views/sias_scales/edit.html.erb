@@ -1,0 +1,12 @@
+<% provide(:title, "SIAS編集") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "SIAS" %>
+<div class="main-contents patient-page edit-sias edit-section">
+  <div class="container">
+    <%= form_scale_link_section("SIAS", "sias_scales", @patient) %>
+    <%= form_with(url: patient_sias_scale_path(id: @sias_scale), scope: :sias_scale, local: true, method: :patch) do |f| %>
+      <%= render "form", f: f %>
+      <%= render "sias_scales/modal/explain_modal" %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<% provide(:title, "深部腱反射作成") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "深部腱反射" %>
+<div class="main-contents patient-page new-tendon-reflex new-section">
+  <div class="container">
+    <%= form_scale_link_section("深部腱反射", "tendon_reflex_scales", @patient) %>
+    <%= form_with(url: patient_tendon_reflex_scales_path, scope: :tendon_reflex_scale, local: true) do |f| %>
+      <%= render "form", f: f, tendon_reflex_scale: @tendon_reflex_scale %>
+      <div class="submit-form">
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>

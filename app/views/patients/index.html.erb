@@ -1,0 +1,27 @@
+<% provide(:title, "患者一覧") %>
+<%= render "shared/breadcrumb", patient: false, scale: false %>
+<div class="main-contents patient-index-page">
+  <div class="container">
+    <div class="link-section-and-search-section row">
+      <div class="new-patient-link link-section col-12 col-md-8">
+        <%= link_to "患者登録", new_patient_path, class: "btn btn-primary" %>
+      </div>
+      <%= render "search_form", q: @q %>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="d-none d-md-block">id</th>
+          <th>患者名</th>
+          <th>性別</th>
+          <th>年齢</th>
+          <th class="d-none d-md-block">登録日</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @patients %>
+      </tbody>
+    </table>
+    <%= paginate @patients %>
+  </div>
+</div>

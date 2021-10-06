@@ -1,0 +1,13 @@
+<% provide(:title, "患者ページ") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: false %>
+<div class="main-contents patient-page show-patient">
+  <div class="container">
+    <%= render "patients/patient_detail", patient: @patient %>
+    <%= render "patients/patient_overview", patient: @patient %>
+    <%= render "patients/defined_scale", patient: @patient %>
+    <%= render "patients/undefined_scale", patient: @patient %>
+    <div class="delete-link-section d-flex flex-row-reverse">
+      <%= link_to "患者情報を削除する", patient_path(@patient), class: "custom-btn btn-radius-solid", method: :delete, data: { confirm: "患者情報を削除します。よろしいですか?" }  %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<% provide(:title, "FACT") %>
+<%= render "shared/breadcrumb", patient: @patient, scale: "FACT" %>
+<div class="main-contents patient-page show-fact show-scale">
+  <div class="container">
+    <%= show_scale_link_section("FACT", "fact_scales", @patient, @fact_scale) %>
+    <div class="bestest-overview overview">
+      <p class="fact-total-score show-total-score">得点　<%= @fact_scale.total_score %>点</p>
+    </div>
+    <%= render "show_fact_scale_table", fact_scale: @fact_scale %>
+    <%= render "fact_scales/modal/explain_modal" %>
+  </div>
+</div>

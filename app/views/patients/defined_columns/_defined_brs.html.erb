@@ -1,0 +1,15 @@
+<% if patient.brs_scales.present? %>
+  <div class="defined-scale-item row">
+    <div class="col-sm-4 define-scale-content">
+      <%= link_to "BRS", patient_brs_scales_path(patient), class: "defined-scale btn btn-primary", local: true %>
+    </div>
+    <div class="col-sm-3">
+      <% patient.brs_scales.last.decorate.scale_attributes.each do |attr_name| %>
+        <p class="brs-<%= attr_name %> score-part">
+          <%= BrsScale.human_attribute_name(attr_name) %>:
+          <%= patient.brs_scales.last.send("#{attr_name}_i18n") %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+<% end %>

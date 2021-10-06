@@ -1,0 +1,614 @@
+@import 'reset';
+
+//body
+body{
+  a{
+    color: black;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  body{
+    font-size: 15px;
+  }
+}
+
+// header
+header {
+  .navbar{
+    background-color: rgb(30, 120, 190);
+    color: white;
+    height: 57px;
+    .container{
+      display: block;
+    }
+    .navbar-nav{
+      float: right;
+    }
+    .nav-link{
+        color: white;
+    }
+  }
+}
+.page-title{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  text-align:center;
+  line-height:57px;
+  font-size:1.5em;
+  font-weight:bold;
+  color: #darkblue;
+}
+
+@media screen and (max-width: 768px) {
+  .page-title{
+    font-size: 15px;
+    word-wrap: break-word;
+    height: 57px;
+  }
+  .navbar-nav{
+    width: 80px;
+    margin-right: 10px;
+  }
+  .nav-link{
+    font-size: 10px;
+  }
+  .dropdown-menu{
+    li{
+      font-size: 10px;
+    }
+  }
+}
+
+// main
+.main-contents{
+  padding-top: 12px;
+  padding-bottom: 80px;
+}
+.flash-message-content{
+  margin-top: 102px;
+}
+
+//footer
+footer{
+  border-top: 3px dotted rgba(30, 120, 190, 0.5);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.5)
+}
+@media screen and (max-width: 768px) {
+  footer{
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h5{
+    font-size: 15px;
+  }
+}
+
+// therapist
+.new-therapist, .edit-therapist{
+  text-align: center;
+}
+.portfolio{
+  background-color: #d4edda;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//patient
+.new-patient-link{
+  margin-bottom: 20px;
+}
+.new-patient, .edit-patient{
+  text-align: center;
+  select{
+    height: 30px;
+  }
+  .form_group{
+    display: flex;
+    justify-content: center;
+    span{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .fist-name-form, .last-name-form{
+    width: 100px;
+  }
+  .age-form, .weight-form, .height-form{
+    width: 70px;
+  }
+
+}
+.patient-page{
+  margin-top: 30px;
+  h3{
+    font-size: 20px;
+  }
+  .show-patient-content{
+    padding:10px 20px;
+    margin-top: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(30, 120, 190);
+    background-color: white;
+  }
+}
+.patient-details{
+  align-items: center;
+  margin-bottom: 40px;
+  .name-content{
+    line-height: 60px;
+    vertical-align: middle;
+    padding-right: 30px;
+  }
+  .sex-and-age-content, .height-and-weight-content{
+    p{
+      margin-bottom:5px;
+    }
+  }
+  .sex-and-age-content{
+    padding-right: 30px;
+  }
+}
+.evaluation-finding-section{
+  margin-top: 15px;
+}
+.defined-scale-section{
+  .defined-scale-item{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: flex-end;
+    border-bottom: 1px solid gray;
+    .define-scale-content{
+      padding-left: 0px;
+    }
+    .defined-scale{
+      display: inline-block;
+      width: 160px;
+      font-size: 15px;
+    }
+    p{
+      margin-bottom: 0px;
+    }
+  }
+}
+.undefined-scale-section{
+  margin-top: 15px;
+}
+.undefined-scale-items{
+  padding-top: 20px;
+}
+.undefined-scale-item{
+  text-align: center;
+  margin-top: 15px;
+  .undefined-scale{
+    display: inline-block;
+    width: 160px;
+  }
+}
+.delete-link-section{
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .patient-details{
+    .sex-and-age-content{
+      font-size: 10px;
+      padding-left: 15px;
+    }
+    .height-and-weight-content{
+      font-size: 10px;
+    }
+    .edit-link{
+      margin-top: 20px;
+      width: 100px;
+    }
+  }
+  .define-scale-content{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .total-score, .score-part, .undefined-columns-count{
+    text-align: center;
+  }
+}
+
+//rom
+.new-rom-collapse, .show-rom-collapse, .new-mmt-collapse, .show-mmt-collapse{
+  margin-bottom: 20px;
+  button{
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .new-rom-collapse, .show-rom-collapse, .new-mmt-collapse, .show-mmt-collapse{
+    button{
+      margin: 10px;
+    }
+  }
+}
+
+//brs
+@media screen and (max-width: 768px) {
+  .index-brs{
+    th{
+      font-size: 13px;
+    }
+  }
+  .brs-score{
+    td{
+      font-size: 10px;
+    }
+  }
+}
+
+//tendon-reflex
+.show-tendon-reflex{
+  .d-flex + .d-flex{
+    margin-top: 20px;
+  }
+}
+
+//bestest
+@media screen and (max-width: 768px) {
+  .show-bestest{
+    .index-link{
+      width: 130px;
+      margin-right: 50px;
+    }
+  }
+}
+
+//hdsr
+.hdsr-submit-form{
+  margin-top: 20px;
+}
+.new-bathyesthesia, .edit-bathyesthesia, .show-bathyesthesia{
+  h3{
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+//fact
+@media screen and (max-width: 768px) {
+  .index-fact{
+    th{
+      font-size: 13px;
+    }
+  }
+}
+
+//form-part
+.new-section, .edit-section{
+  h3{
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+}
+.form_group + .form_group{
+  margin-top: 30px;
+}
+.form-action{
+  margin-top:10px;
+}
+.part-head{
+  dd{
+    font-size: 20px;
+    font-weight: 500;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  .left-top{
+    border: none;
+  }
+}
+.rom-form, .mmt-form, .mas-form, .tendon-reflex-form, .tactile-form, .bathyesthesia-form{
+  .direction-head{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    width: 80px;
+  }
+  div, dd{
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  input{
+    margin-bottom: 20px;
+  }
+  select{
+    height: 31px;
+    margin-bottom: 20px;
+  }
+}
+.nrs-form{
+  .nrs-column{
+    margin-bottom: 30px;
+    label{
+      font-size: 20px;
+      font-weight: 500;
+      margin-right: 20px;
+    }
+    select{
+      height: 30px;
+    }
+  }
+}
+.hdsr-column{
+  padding-bottom: 40px;
+  border: 1px solid black;
+  .hdsr-head{
+    padding-bottom: 10px;
+  }
+  p{
+    margin-bottom:  0px;
+  }
+}
+.flex-form{
+  display: flex;
+  justify-content: flex-start;
+  .form-left{
+    padding-right: 20px;
+  }
+}
+.hdsr-form{
+  input{
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .part-head{
+    dd{
+      font-size: 12px;
+      font-weight: 500;
+      height: 40px;
+      margin-bottom: 0;
+    }
+  }
+  .rom-form, .mmt-form, .mas-form, .tendon-reflex-form, .tactile-form, .bathyesthesia-form{
+    .direction-head{
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+      width: 80px;
+    }
+    div, dd{
+      height: 40px;
+      padding: 10px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    input{
+      margin-bottom: 0;
+    }
+    select{
+      height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//score-part
+.score-part-head{
+  dd{
+    border: 1px solid rgb(211, 211, 211);
+  }
+}
+.rom-score, .mmt-score, .mas-score, .tendon-reflex-score, .bathyesthesia-score, .tactile-score{
+  .direction-head{
+    font-size: 20px;
+    font-weight: 500;
+    width: 80px;
+  }
+  dd{
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 0;
+    border: 1px solid rgb(211, 211, 211);
+  }
+}
+.scale_column{
+  padding-bottom: 20px;
+  select{
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rom-score, .mmt-score, .mas-score, .tendon-reflex-score, .bathyesthesia-score, .tactile-score{
+    .direction-head{
+      font-weight: 500;
+      font-size: 15px;
+    }
+    dd{
+      font-size: 12px;
+      height: 40px;
+      padding: 10px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+//index-scale-page
+@media screen and (max-width: 768px) {
+  .index-scale{
+    th{
+      font-size: 13px;
+    }
+    .score-table{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+//show-scale-page
+.overview{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+}
+.show-total-score{
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.show-subtotal-score{
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 768px){
+  .show-tactile, .show-tendon-reflex, .show-bathyesthesia, .show-bestest{
+    a{
+      font-size: 10px;
+    }
+  }
+  .scale_column{
+    span{
+      margin-left: 15px;
+    }
+    select{
+      width: 80%;
+    }
+  }
+  .show-scale{
+    .show-total-score{
+      font-size: 18px;
+    }
+    .show-subtotal-score{
+      font-size: 15px;
+    }
+    .scale-score{
+      font-size: 10px;
+      td{
+        padding-left: 10px;
+        a{
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+//breadcrumb
+main{
+  .breadcrumb-nav{
+    top: 57px;
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(211, 211, 211);
+  }
+  .breadcrumb{
+    background-color: rgb(211, 211, 211);
+    border-radius: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+.breadcrumb{
+    font-size: 12px;
+  }
+}
+
+//scale-index-section
+@media screen and (max-width: 768px){
+  .sm-none{
+    display: none;
+  }
+}
+
+//btn
+.form-action, .link-section, .define-scale-content, .collapse-btns{
+  .btn-primary{
+    background-color: rgb(30, 120, 190);
+    border-color: rgb(30, 120, 190);
+  }
+}
+.signup-btn, .login-btn, .new-patient-btn, .edit-patient-btn{
+  margin-top: 20px;
+}
+.new-therapist-btn{
+  margin-bottom: 20px;
+}
+.undefined-scale-item{
+  .btn-secondary{
+    background-color: rgb(211, 211, 211);
+    border-color: rgb(211, 211, 211);
+    color: black;
+  }
+}
+.custom-btn{
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  padding: 5px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn-radius-solid {
+  border: 1px solid #ccc;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+}
+a.btn-radius-solid:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+}
+.link-section{
+  margin-bottom: 20px;
+}
+//modal
+.modal-body{
+  span{
+    display:inline-block;
+  }
+  .bestest-teachig{
+    padding-bottom: 20px;
+  }
+  .brs-modal-subtitle{
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .brs-modal-subcontent{
+    margin-left: 30px;
+  }
+}
+//error
+.error-explanation{
+  margin-bottom: 30px;
+}

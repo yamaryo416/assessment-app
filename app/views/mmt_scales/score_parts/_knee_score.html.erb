@@ -1,0 +1,24 @@
+<div class="collapse" id="knee_mmt_score">
+  <div class="card card-body">
+    <h3>膝関節</h3>
+    <div class="d-flex justify-content-center">
+      <div class="knee_mmt_head part-head score-part-head">
+        <dd class="left-top"></dd>
+        <dd>屈曲</dd>
+        <dd>伸展</dd>
+      </div>
+      <div class="right_knee_mmt_score mmt-score">
+        <dd class="direction-head">右</dd>
+        <% mmt_scale.right_knee_scale_attributes.each  do |attr_name| %>
+          <dd class="<%= attr_name %>_score"><%= mmt_scale.send("#{attr_name}_i18n") %></dd>
+        <% end %>
+      </div>
+      <div class="left_knee_mmt_score mmt-score">
+        <dd class="direction-head">左</dd>
+        <% mmt_scale.left_knee_scale_attributes.each  do |attr_name| %>
+          <dd class="<%= attr_name %>_score"><%= mmt_scale.send("#{attr_name}_i18n") %></dd>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

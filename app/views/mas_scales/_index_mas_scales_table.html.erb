@@ -1,0 +1,36 @@
+<table class="table">
+  <thead>
+    <tr class="row">
+      <th scope="col" class="col-4 col-md-4">作成日時</th>
+      <th scope="col" class="col-8 col-md-5">筋緊張亢進</th>
+      <th scope="col" class="sm-none col-md-1"></th>
+      <th scope="col" class="sm-none col-md-1"></th>
+      <th scope="col" class="sm-none col-md-1"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% mas_scales.each_with_index do |mas_scale, i| %>
+      <tr class="mas-score score-table row">
+        <td class="mas<%= i %>-created-at col-4 col-md-4"><%= mas_scale.date_of_creation %></td>
+        <td class="mas<%= i %>-hypertonia-part col-8 col-md-5">
+          <% if mas_scale.hypertonia_part %>
+            <% mas_scale.hypertonia_part.each do |part| %>
+              <%= MasScale.human_attribute_name(part[0]) %>
+            <% end %>
+          <% else %>
+            なし
+          <% end %>
+        </td>
+        <td class="col-4 col-md-1">
+          <%= link_to "詳細", patient_mas_scale_path(patient, mas_scale), class: "mas#{i}_show_link show_link custom-btn btn-radius-solid" %>
+        </td>
+        <td class="col-4 col-md-1">
+          <%= link_to "編集", edit_patient_mas_scale_path(patient, mas_scale), class: "mas#{i}_edit_link edit_link custom-btn btn-radius-solid" %>
+        </td>
+        <td class="col-4 col-md-1">
+          <%= link_to "削除", patient_mas_scale_path(patient, mas_scale),class: "hdsr#{i}_delete_link delete_link custom-btn btn-radius-solid", method: :delete, data: { confirm: "MASを削除します。よろしいですか?" } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
